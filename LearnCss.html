@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styleCss.css">
+</head>
+
+<body>
+    <header>
+        <h3>&rarr; What is CSS?</h3>
+        <ul type="square">
+            <li>CSS Stands for Cascading Style Sheets which is style sheet language that used to handle the presentation of the web page containing HTML.</li>
+            <li>CSS Gives styles to raw HTML.</li>
+            <li>CSS is used to give style to our web pages.</li>
+            <li>CSS is used to make website responsive.</li>
+            <li>HTML is used to strucure a website.</li>
+            <li>CSS takes resposibility of design. It makes our website beautiful and modern looking.</li>
+        </ul>
+    </header>
+    <section>
+        <h3>&rarr; Three ways to add CSS to HTML</h3>
+        <ol>
+            <li><span class="redFont">Inline CSS : </span>Inline CSS is added to the elements directly using style attribute. This CSS is will execute over other two CSS if defined.<br><code>For Example :- &lt;p style="color:red;"&gt;</code></li><br>
+            <li><span class="redFont">Internal CSS : </span>Internal CSS is kept inside head tags in &lt;style&gt; tags in HTML. This CSS is will execute over external css if defined after link tag.<br><code>For Example :- <br>&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>&lt;/head&gt;</code></li><br>
+            <li><span class="redFont">External CSS : </span>External CSS is kept separatelt inside a css style sheet file. & linked to html in head tags. If no Inline or Internal CSS is define for element than this CSS will take effect.<br><code>For Example :- &lt;link rel="stylesheet" href="/style.css"&gt;<br>Here <span class="blueFont">style.css</span> is new externalfile which is linked to html with link tag.</code></li>
+        </ol>
+    </section>
+    <section>
+        <h3>&rarr; CSS SYNTAX:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>SELECTOR</th>
+                    <th>PROPERTY</th>
+                    <th>VALUE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="redFont">p</td>
+                    <td class="redFont">{color:</td>
+                    <td class="redFont">red;}</td>
+                </tr>
+                <tr>
+                    <th class="blueFont">Where?</th>
+                    <th class="blueFont">What?</th>
+                    <th class="blueFont">Set to this</th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h3>&rarr; What is A CSS SELECTOR?</h3>
+        <div class="selector">
+            <ul type="square">
+                <li>CSS Selectors are used to find the element whose prperty will be set.</li>
+                <li>Selectors are used to target the HTML Elements.</li>
+                <li>Selectors makes it easy for us to easily target single/multiple HTML Elements in markup.</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SELECTOR</th>
+                        <th>PROPERTY</th>
+                        <th>VALUE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="redFont">p</td>
+                        <td class="redFont">{color:</td>
+                        <td class="redFont">red;}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h3>&rarr; GROUP SELECTORS:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>SELECTOR</th>
+                    <th>PROPERTIES:VALUES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="redFont">p, div, h3</td>
+                    <td class="redFont">{<br>&nbsp;&nbsp;&nbsp;background-color : red;<br>&nbsp;&nbsp;&nbsp;color : black;<br>&nbsp;&nbsp;&nbsp;font-size : 20px;<br>}</td>
+                </tr>
+                <tr>
+                    <th class="blueFont">Group of selcetors</th>
+                    <th class="blueFont">Declaration block</th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

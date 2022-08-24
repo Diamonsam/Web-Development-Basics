@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Basic HTML</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <hr id="top">
+    <h2>&rarr;&nbsp;&nbsp;Heading Tags & Text Tags</h2>
+    <hr>
+    <!-- Heading Tags -->
+    <h1>&lt;H1&gt; Tag should be Only One Per Webpage - For Better SEO </h1>
+    <h2>&lt;H2&gt; Tag we can use for SEO Keywords or Headings</h2>
+    <h3>&lt;H3&gt; is smaller heading than &lt;H2&gt;</h3>
+    <h4>&lt;H4&gt; is smaller heading than &lt;H3&gt;</h4>
+    <h5>&lt;H5&gt; is smaller heading than &lt;H4&gt;</h5>
+    <h6>&lt;H6&gt; is smaller heading than &lt;H5&gt;</h6>
+
+    <!-- <hr> Tag Stand For Horizontal Ruler which is used to draw horizontal line . It is Self Closing Tag -->
+    <strong>Line below is made with &lt;hr&gt; Tag which Stand For Horizontal Ruler and it's used to draw horizontal line . It is Self Closing Tag.</strong>
+    <hr>
+
+    <!-- Text Formatting Tags -->
+    <p>This is Paragraph Tag</p>
+    <!-- &lt; Is HTML Enities which Stand For Less Than < symbol  & &gt; Stand For Greater Than > symbol -->
+
+    <!-- Bold -->
+    <strong>This is &lt;strong&gt; tag used to format text Bold. It's Modern Way.</strong>
+    <br>
+    <b>This is &lt;b&gt; tag used to format text Bold. It's Traditional Way.</b>
+
+    <!-- <br> Tag Stand for Break Point which is used to break the line means to enter next line. It is Self Closing Tag -->
+    <br>
+    <br>
+    <strong>Space below & above is made with &lt;br&gt; Tag which Stand for Break Point and it's used to break the line means to enter next line. It is Self Closing Tag.</strong>
+    <br>
+    <br>
+
+    <!-- Italic -->
+    <em>This is &lt;em&gt; tag used to format text Italic. It's Modern Way.</em>
+    <br>
+    <i>This is &lt;i&gt; tag used to format text Italic. It's Traditional Way.</i>
+    <hr>
+    <code>lorem(N)</code>
+    <br>Write &rarr; lorem100 & Press Enter to Generate 100 Words Dummy Text.<br> For Example lorem100 = Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iure a debitis vel minima, animi consequuntur aliquid libero autem eum, cumque
+    consectetur soluta quae dicta provident eos omnis adipisci alias repudiandae, reprehenderit ut accusamus cupiditate? Incidunt, facere mollitia optio odio laudantium quod, porro at consequuntur vero, laborum nisi suscipit cupiditate. Quia, dolorem!
+    Voluptatibus, fuga cum temporibus minus ab eius nobis accusamus iusto optio numquam vel voluptates deleniti amet minima aliquam nemo dolore ipsa doloremque nihil quis ipsum! Nihil sapiente excepturi veniam saepe necessitatibus ex, laudantium voluptatibus
+    fuga officia aperiam alias dolores consequuntur cumque quaerat facere rerum illo tempore nam delectus.<br><br>
+    <hr>
+
+    <!-- Deatils & Summary elements  -->
+    <h2>&rarr;&nbsp;&nbsp;The Deatails & summary element</h2>
+    <hr>
+
+    <code>
+            Format :- 
+            <br>&lt;details&gt;<br>
+            &lt;summary&gt;Epcot Center&lt;/summary&gt;<br>
+            &lt;p&gt;Deatils about Above topic&lt;/p&gt;<br>
+        </code> <br>Result Will Be Like :- <br>
+    <details>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p><br>
+    </details>
+
+    <!-- Links -->
+    <hr>
+    <h2>&rarr;&nbsp;&nbsp;Links</h2>
+    <hr>
+
+    <!-- External Links-->
+    These Are Absolute External Links &rarr;&nbsp;&nbsp;<a href="https://www.google.com" target="_blank">Go To google</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.Facebook.com" target="_blank">Go To Facebook</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.Youtube.com" target="_blank">Go To Youtube</a>&nbsp;&nbsp;&nbsp;
+    <!--target="_blank" Attribute is used to open link in new tab-->
+    <!-- &nbsp; Stand For Non-Breaking Space which is used to give a single space in html -->
+    <hr> This is Relative External Link &rarr;&nbsp;&nbsp;<a href="/Emmet.html" target="_blank">Shortcuts Of Vs Code</a>
+    <!-- Internal Links -->
+    <hr> This is Internal Link &rarr;&nbsp;&nbsp;<a href="#top">Go To Top</a>
+    <br> You Can go to particular portion of the current web page by using #ElementId as href value &nbsp;&rarr;&nbsp;&nbsp;<code>&lt;a href="#top"&gt;Go to Top&lt;/a&gt;</code>
+    <hr>
+    <h2>&rarr;&nbsp;&nbsp;Images</h2>
+    <hr>
+
+    <!-- Images with alt attribute Self Closing-->
+    <img src="/samy.jpg" alt="This Image is not present so alt text is showing">
+    <img src="https://source.unsplash.com/300x200/?nature,water" alt="Nature">
+
+    <!-- List -->
+    <hr>
+    <h2>&rarr;&nbsp;&nbsp;Lists</h2>
+    <hr>
+    <h3>Un-Ordered List</h3>
+    <ul>
+        <li>This is First Line</li>
+        <li>This is Second Line</li>
+        <li>This is Third Lined</li>
+        <li>This is Fourth Line</li>
+        <li>This is Fifth Line</li>
+        <ul>
+            <li type="Disc">This is Disc Type</li>
+            <li type="Circle">This is Circle Type</li>
+            <li type="Square">This is Square Type</li>
+        </ul>
+    </ul>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>This is First Line</li>
+        <li>This is Second Line</li>
+        <li>This is Third Lined</li>
+        <li>This is Fourth Line</li>
+        <li>This is Fifth Line</li>
+        <ol>
+            <li type="A">This is Capital Letter Type</li>
+            <li type="a">This is Small Letter Type</li>
+            <li type="I">This is Capital Roman Letter Type</li>
+            <li type="i">This is Small Roman Letter Type</li>
+            <li type="1">This is Number Type</li>
+            </li>
+        </ol>
+    </ol>
+    <h3>Description List</h3>
+    <dl>
+        <!-- dt Stands For Description Title -->
+        <dt>Class 1</dt>
+        <!-- dd Stands For Description Details -->
+        <dd>Where students study Science</dd>
+        <dt>Class 2</dt>
+        <dd>Where students study Maths</dd>
+        <dt>Class 3</dt>
+        <dd>Where students study Computer</dd>
+    </dl>
+
+    <!-- Tables -->
+    <hr>
+    <h2>&rarr;&nbsp;&nbsp;Tables</h2>
+    <hr>
+    <table>
+        <!-- head of the table contain heading -->
+        <thead>
+            <!-- tr = table row -->
+            <tr>
+                <!-- th = table haeding  -->
+                <th>No</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Mobile No</th>
+            </tr>
+        </thead>
+        <!-- body of the table contain data -->
+        <tbody>
+            <tr>
+                <!-- td = table data  -->
+                <td>1</td>
+                <td>Samir</td>
+                <td>Melbourne</td>
+                <td>+1-799-66-6671</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Navin</td>
+                <td>Ahmedabad</td>
+                <td>+91-97246-43720</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Deep</td>
+                <td>Surat</td>
+                <td>+91-90999-32101</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>&rarr;&nbsp;&nbsp;Forms</h2>
+    <hr>
+    <form action="backend.php">
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other <input type="radio" name="myGender">
+        </div>
+
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf" selected>Swift</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+    <hr>
+    <h2>&rarr;&nbsp;&nbsp;Inline elements & Block Elements Difference:</h2>
+    <hr>
+    <p style="border: 2px solid red;">This is a paragraph Which is Block Element which means it take whole width .</p>
+    <p style="border: 2px solid blue;">This is also a paragraph</p>
+
+    <span style="border: 2px solid red;">This is a span which only take width which is needed.</span> <span style="border: 2px solid blue;">This is also a span</span>
+    <!-- In-Line Elements -->
+    <hr>
+    <h2>&rarr;&nbsp;&nbsp;Inline elements in HTML:</h2>
+    <hr>
+    <div class="inline">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tag</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>&lt;a&gt;</td>
+                    <td>This tag defines a hyperlink, which is used to link from one page to another. </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>&lt;abbr&gt;</td>
+                    <td>This tag defines an abbreviation or an acronym, like "HTML", "Mr.", "Dec.", "ASAP", "ATM".</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&lt;acronym&gt;</td>
+                    <td>This tag is not supported in HTML5. Use the &lt;abbr&gt; tag instead.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>&lt;b&gt;</td>
+                    <td>This tag specifies bold text without any extra importance.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>&lt;bdo&gt;</td>
+                    <td>This tag is used to override the current text direction.&lt;</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>&lt;big&gt;</td>
+                    <td>This tag tag defines bigger text.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>&lt;br&gt;</td>
+                    <td>This tag inserts a single line break.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>&lt;button&gt;</td>
+                    <td>This tag defines a clickable button.</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>&lt;cite&gt;</td>
+                    <td>This tag defines the title of a work (e.g. a book, a song, a movie, a TV show, a painting, a sculpture, etc.).</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>&lt;code&gt;</td>
+                    <td>This tag is a phrase tag. It defines a piece of computer code.</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>&lt;dfn&gt;</td>
+                    <td>This tag represents the defining instance of a term in HTML.</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>&lt;em&gt;</td>
+                    <td>This tag is a phrase tag. It renders as emphasized text.</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>&lt;i&gt;</td>
+                    <td>This tag defines a part of text in an alternate voice or mood. The content of the &lt;i&gt; tag is usually displayed in italic.</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>&lt;img&gt;</td>
+                    <td>This tag defines an image in an HTML page.</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>&lt;input&gt;</td>
+                    <td>This tag specifies an input field where the user can enter data.</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>&lt;kbd&gt;</td>
+                    <td>This tag is a phrase tag. It defines keyboard input.</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>&lt;label&gt;</td>
+                    <td>This tag defines a label for several elements</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>&lt;map&gt;</td>
+                    <td>This tag is used to define a client-side image-map. An image-map is an image with clickable areas.</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>&lt;object&gt;</td>
+                    <td>This tag defines an embedded object within an HTML document. Use this element to embed multimedia (like audio, video, Java applets, ActiveX, PDF, and Flash) in your web pages.</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>&lt;output&gt;</td>
+                    <td>This tag represents the result of a calculation (like one performed by a script).</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>&lt;q&gt;</td>
+                    <td>This tag defines a short quotation.</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>&lt;samp&gt;</td>
+                    <td>This tag is a phrase tag. It defines sample output from a computer program.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Block Elements -->
+    <hr>
+    <h2>&rarr;&nbsp;&nbsp;Block elements in HTML:</h2>
+    <hr>
+    <div class="block">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tag</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>&lt;address&gt;</td>
+                    <td>This tag defines the contact information for the author/owner of a document or an article.</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>&lt;article&gt;</td>
+                    <td>This tag specifies independent, self-contained content.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>&lt;aside&gt;</td>
+                    <td>This tag defines some content aside from the content it is placed in.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>This tag specifies a section that is quoted from another source.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>&lt;canvas&gt;</td>
+                    <td>This tag is used to draw graphics, on the fly, via scripting (usually JavaScript).</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>&lt;dd&gt;</td>
+                    <td>This tag is used to describe a term/name/details in a description list.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>&lt;div&gt;</td>
+                    <td>This tag defines a division or a section in an HTML document. </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>&lt;dl&gt;</td>
+                    <td>This tag is short for description list and is a collection of dt+dd elements.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>&lt;dt&gt;</td>
+                    <td>This tag is used to describe a title in a description list.</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>&lt;fieldset&gt;</td>
+                    <td>This tag is used to group related elements in a form</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>This </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>&lt;figure&gt;</td>
+                    <td>This tag defines a caption for a &lt;figure&gt; element.</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>&lt;footer&gt;</td>
+                    <td>This tag defines a footer for a document or section.</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>&lt;form&gt;</td>
+                    <td>This tag is used to create an HTML form for user input. </td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>&lt;h1&gt;-&lt;h6&gt;</td>
+                    <td>This </td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>&lt;header&gt;</td>
+                    <td>This </td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>&lt;hr&gt;</td>
+                    <td>These tags are used to define HTML headings.</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>&lt;li&gt;</td>
+                    <td>This tag is used to represent an item in a list.</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>&lt;main&gt;</td>
+                    <td>This tag specifies the main content of a document.</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>&lt;nav&gt;</td>
+                    <td>This tag defines a set of navigation links.</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>&lt;noscript&gt;</td>
+                    <td>This tag defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>&lt;ol&gt;</td>
+                    <td>This tag represents an ordered list of items.</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>&lt;p&gt;</td>
+                    <td>This tag represents a paragraph.</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>&lt;pre&gt;</td>
+                    <td>This tag defines preformatted text. Text in a &lt;pre&gt; element is displayed in a fixed-width font, and the text preserves both spaces and line breaks.</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>&lt;section&gt;</td>
+                    <td>This tag defines a section in a document.</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>&lt;table&gt;</td>
+                    <td>This tag defines an HTML table.</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>This tag is used to group footer content in an HTML table.</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>&lt;ul&gt;</td>
+                    <td>This tag represents an unordered list of items.</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>&lt;video&gt;</td>
+                    <td>This tag is used to embed video content in a document, such as a movie clip or other video streams.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Ids & Classes -->
+    <hr>
+    <h2>&rarr;&nbsp;&nbsp;Ids & Classes in HTML:</h2>
+    <hr>
+    <!-- Class creation Shortcut -->
+    &rarr;&nbsp;&nbsp;<strong>To generate Tag with Class</strong>
+    <p class="code">
+        <code>
+            Format :- tagname.classname + Enter (or) Tab key<br>
+            For example div.container will create &lt;div class="container"&gt;&lt;div&gt;<br>
+            One classname you can use in multiple elements.
+        </code><br><br>&rarr;&nbsp;&nbsp;You can crete single element with multiple classes.<br><br>
+        <code>
+            Format :- tagname.classname1.classsname2.classname3 + Enter (or) Tab key<br>
+            For example div.container.redBg.greenText will create &lt;div class="container redBg greenText"&gt;&lt;div&gt;
+        </code>
+        <br><br>&rarr;&nbsp;&nbsp;Default Element is Div when no element is specified.<br><br>
+        <code>
+            Format :- .classname + Enter (or) Tab key<br>
+            For example .container will create &lt;div class="container"&gt;&lt;div&gt;<br>
+        </code><br><br>
+    </p>
+    <!-- Id creation Shortcut -->
+    &rarr;&nbsp;&nbsp;<strong>To generate Tag with Id</strong>
+    <p class="code">
+        <code>
+            Format :- tagname#idname + Enter (or) Tab key<br>
+            For example div#container will create &lt;div id="container"&gt;&lt;div&gt;<br>
+            One idname is unique &  you can't use it in multiple elements, you can only use it in one element.
+        </code>
+        <br><br>You can not crete single element with multiple Ids.
+        <br><br>&rarr;&nbsp;&nbsp;Default Element is Div when no element is specified.<br><br>
+        <code>
+            Format :- #classname + Enter (or) Tab key<br>
+            For example #container will create &lt;div id="container"&gt;&lt;div&gt;<br>
+        </code><br><br>
+    </p>
+    <br><br>
+    <!-- Html Entities -->
+    <hr>
+    <h2>&rarr;&nbsp;&nbsp;HTML Entities:</h2>
+    <hr>
+    <div class="entity">
+        <pre>
+            Some characters are reserved in HTML.
+
+            If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+
+            Character entities are used to display reserved characters in HTML.
+
+            A character entity looks like this:
+            
+            &entity_name;
+                OR
+            &#entity_number;
+
+        </pre>
+        <strong>Some Useful HTML Character Entities</strong>
+        <br><br>
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Result</th>
+                    <th>Entity Name</th>
+                    <th>Entity Number</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>•</td>
+                    <td>&bull ;</td>
+                    <td>&# 8226 ;</td>
+                    <td>bullet = black small circle</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>…</td>
+                    <td>&hellip ;</td>
+                    <td>&# 8230 ;</td>
+                    <td>horizontal ellipsis = three dot leader</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>′</td>
+                    <td>&prime ;</td>
+                    <td>&# 8242 ;</td>
+                    <td>prime = minutes = feet</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>″</td>
+                    <td>&Prime ;</td>
+                    <td>&# 8243 ;</td>
+                    <td>double prime = seconds = inches</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>‾</td>
+                    <td>&oline ;</td>
+                    <td>&# 8254 ;</td>
+                    <td>overline = spacing overscore</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>⁄</td>
+                    <td>&frasl ;</td>
+                    <td>&# 8260 ;</td>
+                    <td>fraction slash</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>℘</td>
+                    <td>&weierp ;</td>
+                    <td>&# 8472 ;</td>
+                    <td>script capital P = power set = Weierstrass p</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>ℑ</td>
+                    <td>&image ;</td>
+                    <td>&# 8465 ;</td>
+                    <td>blackletter capital I = imaginary part</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>ℜ</td>
+                    <td>&real ;</td>
+                    <td>&# 8476 ;</td>
+                    <td>blackletter capital R = real part symbol</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>™</td>
+                    <td>&trade ;</td>
+                    <td>&# 8482 ;</td>
+                    <td>trade mark sign</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>ℵ</td>
+                    <td>&alefsym ;</td>
+                    <td>&# 8501 ;</td>
+                    <td>alef symbol = first transfinite cardinal</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>←</td>
+                    <td>&larr ;</td>
+                    <td>&# 8592 ;</td>
+                    <td>leftwards arrow</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>↑</td>
+                    <td>&uarr ;</td>
+                    <td>&# 8593 ;</td>
+                    <td>upwards arrow</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>→</td>
+                    <td>&rarr ;</td>
+                    <td>&# 8594 ;</td>
+                    <td>rightwards arrow</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>↓</td>
+                    <td>&darr ;</td>
+                    <td>&# 8595 ;</td>
+                    <td>downwards arrow</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>↔</td>
+                    <td>&harr ;</td>
+                    <td>&# 8596 ;</td>
+                    <td>left right arrow</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>↵</td>
+                    <td>&crarr ;</td>
+                    <td>&# 8629 ;</td>
+                    <td>downwards arrow with corner leftwards = carriage return</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>⇐</td>
+                    <td>&lArr ;</td>
+                    <td>&# 8656 ;</td>
+                    <td>leftwards double arrow</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>⇑</td>
+                    <td>&uArr ;</td>
+                    <td>&# 8657 ;</td>
+                    <td>upwards double arrow</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>⇒</td>
+                    <td>&rArr ;</td>
+                    <td>&# 8658 ;</td>
+                    <td>rightwards double arrow</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>⇓</td>
+                    <td>&dArr ;</td>
+                    <td>&# 8659 ;</td>
+                    <td>downwards double arrow</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>⇔</td>
+                    <td>&hArr ;</td>
+                    <td>&# 8660 ;</td>
+                    <td>left right double arrow</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>∀</td>
+                    <td>&forall ;</td>
+                    <td>&# 8704 ;</td>
+                    <td>for all</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>∂</td>
+                    <td>&part ;</td>
+                    <td>&# 8706 ;</td>
+                    <td>partial differential</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>∃</td>
+                    <td>&exist ;</td>
+                    <td>&# 8707 ;</td>
+                    <td>there exists</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>∅</td>
+                    <td>&empty ;</td>
+                    <td>&# 8709 ;</td>
+                    <td>empty set = null set = diameter</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>∇</td>
+                    <td>&nabla ;</td>
+                    <td>&# 8711 ;</td>
+                    <td>nabla = backward difference</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>∈</td>
+                    <td>&isin ;</td>
+                    <td>&# 8712 ;</td>
+                    <td>element of</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>∉</td>
+                    <td>&notin ;</td>
+                    <td>&# 8713 ;</td>
+                    <td>not an element of</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>∋</td>
+                    <td>&ni ;</td>
+                    <td>&# 8715 ;</td>
+                    <td>contains as member</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>∏</td>
+                    <td>&prod ;</td>
+                    <td>&# 8719 ;</td>
+                    <td>n-ary product = product sign</td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>∑</td>
+                    <td>&sum ;</td>
+                    <td>&# 8721 ;</td>
+                    <td>n-ary sumation</td>
+                </tr>
+                <tr>
+                    <td>33</td>
+                    <td>−</td>
+                    <td>&minus ;</td>
+                    <td>&# 8722 ;</td>
+                    <td>minus sign</td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>∗</td>
+                    <td>&lowast ;</td>
+                    <td>&# 8727 ;</td>
+                    <td>asterisk operator</td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>√</td>
+                    <td>&radic ;</td>
+                    <td>&# 8730 ;</td>
+                    <td>square root = radical sign</td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>∝</td>
+                    <td>&prop ;</td>
+                    <td>&# 8733 ;</td>
+                    <td>proportional to</td>
+                </tr>
+                <tr>
+                    <td>37</td>
+                    <td>∞</td>
+                    <td>&infin ;</td>
+                    <td>&# 8734 ;</td>
+                    <td>infinity</td>
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td>∠</td>
+                    <td>&ang ;</td>
+                    <td>&# 8736 ;</td>
+                    <td>angle</td>
+                </tr>
+                <tr>
+                    <td>39</td>
+                    <td>∧</td>
+                    <td>&and ;</td>
+                    <td>&# 8743 ;</td>
+                    <td>logical and = wedge</td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>∨</td>
+                    <td>&or ;</td>
+                    <td>&# 8744 ;</td>
+                    <td>logical or = vee</td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td>∩</td>
+                    <td>&cap ;</td>
+                    <td>&# 8745 ;</td>
+                    <td>intersection = cap</td>
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td>∪</td>
+                    <td>&cup ;</td>
+                    <td>&# 8746 ;</td>
+                    <td>union = cup</td>
+                </tr>
+                <tr>
+                    <td>43</td>
+                    <td>∫</td>
+                    <td>&int ;</td>
+                    <td>&# 8747 ;</td>
+                    <td>integral</td>
+                </tr>
+                <tr>
+                    <td>44</td>
+                    <td>∴</td>
+                    <td>&there4 ;</td>
+                    <td>&# 8756 ;</td>
+                    <td>therefore</td>
+                </tr>
+                <tr>
+                    <td>45</td>
+                    <td>∼</td>
+                    <td>&sim ;</td>
+                    <td>&# 8764 ;</td>
+                    <td>tilde operator = varies with = similar to</td>
+                </tr>
+                <tr>
+                    <td>46</td>
+                    <td>≅</td>
+                    <td>&cong ;</td>
+                    <td>&# 8773 ;</td>
+                    <td>approximately equal to</td>
+                </tr>
+                <tr>
+                    <td>47</td>
+                    <td>≈</td>
+                    <td>&asymp ;</td>
+                    <td>&# 8776 ;</td>
+                    <td>almost equal to = asymptotic to</td>
+                </tr>
+                <tr>
+                    <td>48</td>
+                    <td>≠</td>
+                    <td>&ne ;</td>
+                    <td>&# 8800 ;</td>
+                    <td>not equal to</td>
+                </tr>
+                <tr>
+                    <td>49</td>
+                    <td>≡</td>
+                    <td>&equiv ;</td>
+                    <td>&# 8801 ;</td>
+                    <td>identical to</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>≤</td>
+                    <td>&le ;</td>
+                    <td>&# 8804 ;</td>
+                    <td>less-than or equal to</td>
+                </tr>
+                <tr>
+                    <td>51</td>
+                    <td>≥</td>
+                    <td>&ge ;</td>
+                    <td>&# 8805 ;</td>
+                    <td>greater-than or equal to</td>
+                </tr>
+                <tr>
+                    <td>52</td>
+                    <td>⊂</td>
+                    <td>&sub ;</td>
+                    <td>&# 8834 ;</td>
+                    <td>subset of</td>
+                </tr>
+                <tr>
+                    <td>53</td>
+                    <td>⊃</td>
+                    <td>&sup ;</td>
+                    <td>&# 8835 ;</td>
+                    <td>superset of</td>
+                </tr>
+                <tr>
+                    <td>54</td>
+                    <td>⊄</td>
+                    <td>&nsub ;</td>
+                    <td>&# 8836 ;</td>
+                    <td>not a subset of</td>
+                </tr>
+                <tr>
+                    <td>55</td>
+                    <td>⊆</td>
+                    <td>&sube ;</td>
+                    <td>&# 8838 ;</td>
+                    <td>subset of or equal to</td>
+                </tr>
+                <tr>
+                    <td>56</td>
+                    <td>⊇</td>
+                    <td>&supe ;</td>
+                    <td>&# 8839 ;</td>
+                    <td>superset of or equal to</td>
+                </tr>
+                <tr>
+                    <td>57</td>
+                    <td>⊕</td>
+                    <td>&oplus ;</td>
+                    <td>&# 8853 ;</td>
+                    <td>circled plus = direct sum</td>
+                </tr>
+                <tr>
+                    <td>58</td>
+                    <td>⊗</td>
+                    <td>&otimes ;</td>
+                    <td>&# 8855 ;</td>
+                    <td>circled times = vector product</td>
+                </tr>
+                <tr>
+                    <td>59</td>
+                    <td>⊥</td>
+                    <td>&perp ;</td>
+                    <td>&# 8869 ;</td>
+                    <td>up tack = orthogonal to = perpendicular</td>
+                </tr>
+                <tr>
+                    <td>60</td>
+                    <td>⋅</td>
+                    <td>&sdot ;</td>
+                    <td>&# 8901 ;</td>
+                    <td>dot operator</td>
+                </tr>
+                <tr>
+                    <td>61</td>
+                    <td>⌈</td>
+                    <td>&lceil ;</td>
+                    <td>&# 8968 ;</td>
+                    <td>left ceiling = APL upstile</td>
+                </tr>
+                <tr>
+                    <td>62</td>
+                    <td>⌉</td>
+                    <td>&rceil ;</td>
+                    <td>&# 8969 ;</td>
+                    <td>right ceiling</td>
+                </tr>
+                <tr>
+                    <td>63</td>
+                    <td>⌊</td>
+                    <td>&lfloor ;</td>
+                    <td>&# 8970 ;</td>
+                    <td>left floor = APL downstile</td>
+                </tr>
+                <tr>
+                    <td>64</td>
+                    <td>⌋</td>
+                    <td>&rfloor ;</td>
+                    <td>&# 8971 ;</td>
+                    <td>right floor</td>
+                </tr>
+                <tr>
+                    <td>65</td>
+                    <td>〈</td>
+                    <td>&lang ;</td>
+                    <td>&# 9001 ;</td>
+                    <td>left-pointing angle bracket = bra</td>
+                </tr>
+                <tr>
+                    <td>66</td>
+                    <td>〉</td>
+                    <td>&rang ;</td>
+                    <td>&# 9002 ;</td>
+                    <td>right-pointing angle bracket = ket</td>
+                </tr>
+                <tr>
+                    <td>67</td>
+                    <td>◊</td>
+                    <td>&loz ;</td>
+                    <td>&# 9674 ;</td>
+                    <td>lozenge</td>
+                </tr>
+                <tr>
+                    <td>68</td>
+                    <td>♠</td>
+                    <td>&spades ;</td>
+                    <td>&# 9824 ;</td>
+                    <td>black spade suit</td>
+                </tr>
+                <tr>
+                    <td>69</td>
+                    <td>♣</td>
+                    <td>&clubs ;</td>
+                    <td>&# 9827 ;</td>
+                    <td>black club suit = shamrock</td>
+                </tr>
+                <tr>
+                    <td>70</td>
+                    <td>♥</td>
+                    <td>&hearts ;</td>
+                    <td>&# 9829 ;</td>
+                    <td>black heart suit = valentine</td>
+                </tr>
+                <tr>
+                    <td>71</td>
+                    <td>♦</td>
+                    <td>&diams ;</td>
+                    <td>&# 9830 ;</td>
+                    <td>black diamon</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <h2>&rarr;&nbsp;&nbsp;Semantic Tags In HTML:</h2>
+    <hr>
+    <pre>
+        A semantic element clearly describes its meaning to both the browser and the developer.
+
+            Examples of non-semantic elements: &lt;div&gt; and &lt;span&gt; - Tells nothing about its content.
+
+            Examples of semantic elements: &lt;form&gt;, &lt;table&gt;, and &lt;article&gt; - Clearly defines its content.
+
+        Below is list on Sementic Tags.
+
+        <img src=https://1.bp.blogspot.com/-jnEFh4lsrWU/WSNusEGXoBI/AAAAAAAAFCI/YiYIPSKDA3cf--LJxEp0L8F1Nbnd6PpKACLcB/s1600/Screen%2BShot%2B2017-05-22%2Bat%2B16.05.07.png>
+
+    </pre>
+
+
+</body>
+
+</html>
