@@ -32,3 +32,35 @@ td {
 .selector {
     display: flex;
 }
+
+.greenFont {
+    color: green;
+}
+
+.subhead {
+    font-size: large;
+    font-size: 30px;
+    color: hotpink;
+    line-height: 1.5em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.lighter {
+    font-weight: lighter;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.colorHead {
+    color: indigo;
+    font-size: 20px;
+}

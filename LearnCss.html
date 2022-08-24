@@ -10,9 +10,11 @@
 </head>
 
 <body>
-    <hr>
+    <!-- What is CSS -->
     <header>
+        <hr>
         <h3>&rarr; WHAT IS CSS?</h3>
+        <hr>
         <ul type="square">
             <li>CSS Stands for Cascading Style Sheets which is style sheet language that used to handle the presentation of the web page containing HTML.</li>
             <li>CSS Gives styles to raw HTML.</li>
@@ -22,18 +24,22 @@
             <li>CSS takes resposibility of design. It makes our website beautiful and modern looking.</li>
         </ul>
     </header>
-    <hr>
+    <!-- How to add CSS To HTML -->
     <section>
+        <hr>
         <h3>&rarr; THREE WAYS YOU CAN ADD CSS to HTML</h3>
+        <hr>
         <ol>
             <li><span class="redFont">Inline CSS : </span>Inline CSS is added to the elements directly using style attribute. This CSS is will execute over other two CSS if defined.<br><code>For Example :- &lt;p style="color:red;"&gt;</code></li><br>
             <li><span class="redFont">Internal CSS : </span>Internal CSS is kept inside head tags in &lt;style&gt; tags in HTML. This CSS is will execute over external css if defined after link tag.<br><code>For Example :- <br>&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>&lt;/head&gt;</code></li><br>
             <li><span class="redFont">External CSS : </span>External CSS is kept separatelt inside a css style sheet file. & linked to html in head tags. If no Inline or Internal CSS is define for element than this CSS will take effect.<br><code>For Example :- &lt;link rel="stylesheet" href="/style.css"&gt;<br>Here <span class="blueFont">style.css</span> is new externalfile which is linked to html with link tag.</code></li>
         </ol>
     </section>
-    <hr>
+    <!-- Syntax Of CSS -->
     <section>
+        <hr>
         <h3>&rarr; CSS SYNTAX:</h3>
+        <hr>
         <table>
             <thead>
                 <tr>
@@ -56,9 +62,11 @@
             </tbody>
         </table>
     </section>
-    <hr>
+    <!-- CSS Selectors -->
     <section>
+        <hr>
         <h3>&rarr; WHAT IS A CSS SELECTOR?</h3>
+        <hr>
         <div class="selector">
             <ul type="square">
                 <li>CSS Selectors are used to find the element whose prperty will be set.</li>
@@ -83,9 +91,11 @@
             </table>
         </div>
     </section>
-    <hr>
+    <!-- Types Of Selectors -->
     <section>
+        <hr>
         <h3>&rarr; TYPES OF BASIC CSS SELECTOR?</h3>
+        <hr>
         <ol>
             <li><span class="redFont">CSS Element Selector : </span>CSS Element Selector is used with reference to Tag Name to change the style of that particular Tag.<br><code>For Example :- <br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li><br>
             <li><span class="redFont">CSS Id Selector : </span>CSS Id Selector is used with reference to Tag Id to change the style of that particular Tag.<br><code>For Example :- <br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#para1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li><br>
@@ -93,9 +103,11 @@
             <li><span class="redFont">CSS Grouping Selector : </span>CSS Grouping Selector is used with reference to Multiple Tag Names, Ids Or Classses to change the style of that particular Tag.<br><code>For Example :- <br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p, div, #para1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li><br>
         </ol>
     </section>
-    <hr>
+    <!-- Group Selectors -->
     <section>
+        <hr>
         <h3>&rarr; GROUP SELECTORS:</h3>
+        <hr>
         <table>
             <thead>
                 <tr>
@@ -115,7 +127,188 @@
             </tbody>
         </table>
     </section>
-    <hr>
+    <!-- CSS Fonts -->
+    <section>
+        <hr>
+        <h3>&rarr; CSS FONTS ATTRIBUTES</h3>
+        <hr>
+        <ol>
+            <li><span class="subhead">Font-Family Attribute</span>
+                <ol>
+                    <li><span class="redFont">WEB SAFE FONTS : </span>Web safe fonts are fonts that are pre-installed by many operating systems. <br> While not all systems have the same fonts installed, you can use a web safe <span class="greenFont">font stack (use multiple font family to choose)</span>to choose several fonts <br>that look similar, and are installed on the various systems that you want to support. <br> You Can see which fonts are web safe fonts by clicking here . <a href="https://www.cssfontstack.com/">Web Safe Fonts</a><br><code>For Example :- <br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family: <span class="redFont">'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li><br></li> <br>
+                    <li><span class="redFont">WEB FONTS : </span>If you want to use fonts other than ones pre-installed, as of CSS3, you can use Web Fonts. <br><code>For Example :- <span class="greenFont">Google Fonts Are Most Popular One that You can Embed In your website to use Variety of fonts.</span>
+                    <br>Steps You need follow to Embed Google Fonts In Your Head Tag of Your HTML Page.
+                        <ol>
+                            <li>Go To <a href="https://fonts.google.com/">https://fonts.google.com/</a> </li>
+                            <li>Click and choose which fonts you want to use.</li>
+                            <li>Copy the link tag provided inn right section & include it in your head tag in html. <br><code><span class="greenFont">For Example :- &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"&gt;</span></li>
+                            <li>Now You Can Add CSS Rule for that Font-Family. <br><code>For Example :- <br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family: <span class="redFont">'Ubuntu', sans-serif;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li><br></li>
+                        </ol>
+                    
+                </ol>
+            </li>   
+            <li><span class="subhead">Font-Size Attribute</span>
+                <ul>
+                    <li>The font-size Attribute is used to specify the size of text in particular element.</li>
+                    <li>The default size is 16px.</li>
+                    <li>You can Set Font-Size with 3 different ways.
+                        <ol>
+                            <li>By Defining its values like :- <span class="redFont">large,small,medium,etc.</span></li>
+                            <li>By Defining using percentage like :- <span class="redFont">100% , 90%, etc.</span></li>
+                            <li>By Defining using pixels like : - <span class="redFont">10px (pixel = 1/16 of an Inch).</span></li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="subhead">Font-Weight Attribute</span>
+                <ul>
+                    <li>The font-weight property sets how thick or thin characters in text should be displayed.</li>
+                    <li>You can Set Font-Weight with 3 different ways.
+                        <ol>
+                            <li>By Defining its values between :- <span class="redFont">100 to 900</span></li>
+                            <li>By Defining using Value :- <span class="redFont bold">Bold </span></li>
+                            <li>By Defining using Value :- <span class="redFont lighter">Lighter </span></li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="subhead">Font-Style Attribute</span>
+                <ul>
+                    <li>The font-style property specifies the font style for a text.</li>
+                    <li>You can Set Font-Style with 3 different ways.
+                        <ol>
+                            <li>By Defining using Value :- <span class="redFont">Normal</span></li>
+                            <li>By Defining using Value :- <span class="redFont italic">Italic </span></li>
+                            <li>By Defining using Value :- <span class="redFont oblique">Oblique </span></li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+    <!-- CSS Colors -->
+    <section>
+        <hr>
+        <h3>&rarr; CSS COLORS</h3>
+        <hr>
+        <span class="subhead">&rarr;&nbsp;Colors in CSS can be specified by the following methods:</span>
+        <ol>
+            <li><span class="colorHead">Hexadecimal colors :- </span>
+                <ul type="square">
+                    <li>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color. All values must be between 00 and FF.</li>
+                    <li>For example, the #0000ff value is rendered as blue, because the blue component is set to its highest value (ff) and the others are set to 00.</li>
+                    <li>Syntax:-
+                        <ol>
+                            <li class="redFont">#p1 {background-color: #ff0000;}   /* red */</li>
+                            <li class="greenFont">#p2 {background-color: #00ff00;}   /* green */</li>
+                            <li class="blueFont">#p3 {background-color: #0000ff;}   /* blue */</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">Hexadecimal colors with transparency :- </span>
+                <ul type="square">
+                    <li>A hexadecimal color is specified with: #RRGGBB. To add transparency, add two additional digits between 00 and FF.</li>
+                    <li>Syntax:-
+                        <ol>
+                           <li style="background-color: #ff000080; color:black">#p1a {background-color: #ff000080;}   /* red transparency */</li>
+                           <li style="background-color: #00ff0080; color:black">#p2a {background-color: #00ff0080;}   /* green transparency */</li>
+                           <li style="background-color: #0000ff80; color:black">#p3a {background-color: #0000ff80;}   /* blue transparency */</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">RGB colors :- </span>
+                <ul type="square">
+                    <li>An RGB color value is specified with the rgb() function, which stands for rgb(red, green, blue).</li>
+                    <li>Each parameter (red, green, and blue) defines the intensity of the color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%).</li>
+                    <li>For example, the rgb(0,0,255) value is rendered as blue, because the blue parameter is set to its highest value (255) and the others are set to 0.</li>
+                    <li>Also, the following values define equal color: rgb(0,0,255) and rgb(0%,0%,100%).</li>
+                    <li>Syntax:-
+                        <ol>
+                            <li style="background-color: rgb(255, 0, 0); color: black">#p1 {background-color: rgb(255, 0, 0);}   /* red with opacity */</li>
+                            <li style="background-color: rgb(0, 255, 0); color: black">#p2 {background-color: rgb(0, 255, 0);}   /* green with opacity */</li>
+                            <li style="background-color: rgb(0, 0, 255); color: black">#p3 {background-color: rgb(0, 0, 255);}   /* blue with opacity */</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">RGBA colors :- </span>
+                <ul type="square">
+                    <li>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the object.</li>
+                    <li>An RGBA color is specified with the rgba() function, which stands for rgba(red, green, blue, alpha).</li>
+                    <li>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</li>
+                    <li>Syntax:-
+                        <ol>
+                            <li style="background-color: rgba(255, 0, 0, 0.3); color: black">#p1 {background-color: rgba(255, 0, 0, 0.3);}   /* red with opacity */</li>
+                            <li style="background-color: rgba(0, 255, 0, 0.3); color: black">#p2 {background-color: rgba(0, 255, 0, 0.3);}   /* green with opacity */</li>
+                            <li style="background-color: rgba(0, 0, 255, 0.3); color: black">#p3 {background-color: rgba(0, 0, 255, 0.3);}   /* blue with opacity */</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">HSL colors :- </span>
+                <ul type="square">
+                    <li>HSL stands for hue, saturation, and lightness - and represents a cylindrical-coordinate representation of colors.</li>
+                    <li>An HSL color value is specified with the hsl() function, which stands for hsl(hue, saturation, lightness).</li>
+                    <li>Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue. Saturation is a percentage value; 0% means a shade of gray and 100% is the full color. Lightness is also a percentage; 0% is black, 100% is white.</li>
+                    <li>Syntax:-
+                        <ol>
+                            <li style="background-color: hsl(120, 100%, 50%); color: black;">#p1 {background-color: hsl(120, 100%, 50%);}   /* green */</li>
+                            <li style="background-color: hsl(120, 100%, 75%); color: black;">#p2 {background-color: hsl(120, 100%, 75%);}   /* light green */</li>
+                            <li style="background-color: hsl(120, 100%, 25%); color: black;">#p3 {background-color: hsl(120, 100%, 25%);}   /* dark green */</li>
+                            <li style="background-color: hsl(120, 100%, 70%); color: black;">#p4 {background-color: hsl(120, 60%, 70%);}    /* pastel green */</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">HSLA colors :- </span>
+                <ul type="square">
+                    <li>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity of the object.</li>
+                    <li>An HSLA color value is specified with the hsla() function, which stands for hsla(hue, saturation, lightness, alpha).</li>
+                    <li>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</li>
+                    <li>Syntax:-
+                        <ol>
+                            <li style="background-color: hsla(120, 100%, 50%, 0.3); color: black;">#p1 {background-color: hsla(120, 100%, 50%, 0.3);}   /* green with opacity*/</li>
+                            <li style="background-color: hsla(120, 100%, 75%, 0.3); color: black;">#p2 {background-color: hsla(120, 100%, 75%, 0.3);}   /* light green with opacity*/</li>
+                            <li style="background-color: hsla(120, 100%, 25%, 0.3); color: black;">#p3 {background-color: hsla(120, 100%, 25%, 0.3);}   /* dark green with opacity*/</li>
+                            <li style="background-color: hsla(120, 60%, 70%, 0.3); color: black;">#p4 {background-color: hsla(120, 60%, 70%, 0.3);}    /* pastel green with opacity*/</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">Predefined/Cross-browser color names :- </span>
+                <ul type="square">
+                    <li>140 color names are predefined in the HTML and CSS color specification.</li>
+                    <li>For example: blue, red, coral, brown, etc:</li>
+                    <li>Syntax:-
+                        <ol>
+                           <li style="background-color: blue; color:white">#p1 {background-color: blue;}</li>
+                           <li style="background-color: red; color:white">#p2 {background-color: red;}</li>
+                           <li style="background-color: coral; color:white">#p3 {background-color: coral;}</li>
+                           <li style="background-color: brown; color:white">#p4 {background-color: brown;}</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">With the currentcolor keyword :- </span>
+                <ul type="square">
+                    <li>The currentcolor keyword refers to the value of the color property of an element.</li>
+                    <li>Syntax:-
+                        <pre>
+                            #myDIV 
+                            {
+                            <span class="blueFont">
+                                color: blue; /* Blue text color */
+                                border: 10px solid currentcolor; /* Blue border color */
+                            </span>
+                            }
+                        </pre>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </section>  
 </body>
 
 </html>
