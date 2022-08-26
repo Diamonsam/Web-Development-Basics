@@ -251,7 +251,9 @@
                 <ul type="square">
                     <li>HSL stands for hue, saturation, and lightness - and represents a cylindrical-coordinate representation of colors.</li>
                     <li>An HSL color value is specified with the hsl() function, which stands for hsl(hue, saturation, lightness).</li>
-                    <li>Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue. Saturation is a percentage value; 0% means a shade of gray and 100% is the full color. Lightness is also a percentage; 0% is black, 100% is white.</li>
+                    <li>Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue. 
+                    <li>Saturation is a percentage value; 0% means a shade of gray and 100% is the full color.</li>
+                    <li>Lightness is also a percentage; 0% is black, 100% is white.</li>
                     <li>Syntax:-
                         <ol>
                             <li style="background-color: hsl(120, 100%, 50%); color: black;">#p1 {background-color: hsl(120, 100%, 50%);}   /* green */</li>
@@ -494,8 +496,127 @@
                         </ul>
                     </li>
                     <br><br>
-                    
                 </ol>
+            </li>
+            <li><span class="subhead">Background-attachment Attribute</span>
+                <ul>
+                    <li>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):</li>
+                    <li>Syntax:-
+                        <p>div{background-attachment: fixed;}</p>
+                        <div class="bgimgattach"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere facilis atque cumque nam totam officiis sapiente architecto earum blanditiis, illo itaque quod repellendus libero fuga adipisci provident? Cumque ipsam corrupti, culpa delectus fugit vero sapiente. Ducimus adipisci aperiam quos provident vel voluptates ipsa! Placeat sapiente quia optio consequatur sint suscipit numquam maiores consequuntur, labore ratione saepe, laudantium tempora eum corporis eveniet hic quam. Itaque perspiciatis velit expedita nobis quaerat ipsum aperiam reiciendis optio sunt repudiandae, possimus quam odio provident architecto dolorem sapiente maxime necessitatibus amet vero repellendus aspernatur ad delectus. Quas cum quam totam! Voluptatem, dolore. Nam accusamus fugit fuga incidunt explicabo beatae optio laborum delectus praesentium unde assumenda et eius dolor expedita doloremque quod natus, saepe perspiciatis nostrum labore repudiandae odit quasi commodi. Consectetur nisi ratione eos illum voluptate mollitia placeat necessitatibus rem possimus maxime cumque ex, maiores repellendus magnam accusantium temporibus rerum quas nostrum a, hic aut ut tempora. Laboriosam sequi deleniti incidunt quod eius ullam cum veniam accusamus perferendis, fugit, cupiditate rerum explicabo magni quisquam dignissimos corporis rem similique hic minima unde officiis consectetur adipisci, sed numquam. Nam corrupti repudiandae, quas atque enim ipsa ut dignissimos fuga nobis laudantium aliquid officiis eveniet, ad iure repellat molestias magni?</p></div>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="subhead">Background-shorthand Attribute</span>
+                <ul>
+                    <li>To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.</li>
+                    <li>When using the shorthand property the order of the property values is:
+                        <ol>
+                            <li>background-color</li>
+                            <li>background-image</li>
+                            <li>background-repeat</li>
+                            <li>background-attachment</li>
+                            <li>background-position</li>
+                        </ol>
+                    </li>
+                    <li>It does not matter if one of the property values is missing, as long as the other ones are in this order. Note that we do not use the background-attachment property in the examples above, as it does not have a value.</li>
+                    <li>Syntax:-
+                        <p>div{background: #ffffff url("/Images/Self.png") no-repeat fixed right top;}</p>
+                        <div class="bgimgattach2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere facilis atque cumque nam totam officiis sapiente architecto earum blanditiis, illo itaque quod repellendus libero fuga adipisci provident? Cumque ipsam corrupti, culpa delectus fugit vero sapiente. Ducimus adipisci aperiam quos provident vel voluptates ipsa! Placeat sapiente quia optio consequatur sint suscipit numquam maiores consequuntur, labore ratione saepe, laudantium tempora eum corporis eveniet hic quam. Itaque perspiciatis velit expedita nobis quaerat ipsum aperiam reiciendis optio sunt repudiandae, possimus quam odio provident architecto dolorem sapiente maxime necessitatibus amet vero repellendus aspernatur ad delectus. Quas cum quam totam! Voluptatem, dolore. Nam accusamus fugit fuga incidunt explicabo beatae optio laborum delectus praesentium unde assumenda et eius dolor expedita doloremque quod natus, saepe perspiciatis nostrum labore repudiandae odit quasi commodi. Consectetur nisi ratione eos illum voluptate mollitia placeat necessitatibus rem possimus maxime cumque ex, maiores repellendus magnam accusantium temporibus rerum quas nostrum a, hic aut ut tempora. Laboriosam sequi deleniti incidunt quod eius ullam cum veniam accusamus perferendis, fugit, cupiditate rerum explicabo magni quisquam dignissimos corporis rem similique hic minima unde officiis consectetur adipisci, sed numquam. Nam corrupti repudiandae, quas atque enim ipsa ut dignissimos fuga nobis laudantium aliquid officiis eveniet, ad iure repellat molestias magni?</p></div>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="subhead">Background-origin Attribute</span>
+                <ul>
+                    <li>The background-origin property specifies the origin position (the background positioning area) of a background image.</li>
+                    <li>
+                        <ol>
+                            <li><span class="redFont fontsize20">Padding-box:- </span>Default value. The background image starts from the upper left corner of the padding edge.
+                            <br><br>Syntax:-
+                                <p>div{background-origin: padding-box;}</p>
+                                <div class="bgimgpadding"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel incidunt unde placeat, illo temporibus enim! Expedita quia odio voluptate, reprehenderit fugit obcaecati sapiente exercitationem assumenda aperiam esse, odit, debitis repellendus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure facilis nam beatae et praesentium quae harum minima nesciunt voluptatibus! Maxime!</p></div>
+                            </li><br><br>
+                            <li><span class="redFont fontsize20">Border-box:- </span>The background image starts from the upper left corner of the border
+                            <br><br>Syntax:-
+                                <p>div{background-origin: border-box;}</p>
+                                <div class="bgimgborder"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel incidunt unde placeat, illo temporibus enim! Expedita quia odio voluptate, reprehenderit fugit obcaecati sapiente exercitationem assumenda aperiam esse, odit, debitis repellendus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure facilis nam beatae et praesentium quae harum minima nesciunt voluptatibus! Maxime!</p></div>
+                            </li><br><br>
+                            <li><span class="redFont fontsize20">Content-box:- </span>The background image starts from the upper left corner of the content
+                            <br><br>Syntax:-
+                                <p>div{background-origin: content-box;}</p>
+                                <div class="bgimgcontent"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel incidunt unde placeat, illo temporibus enim! Expedita quia odio voluptate, reprehenderit fugit obcaecati sapiente exercitationem assumenda aperiam esse, odit, debitis repellendus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure facilis nam beatae et praesentium quae harum minima nesciunt voluptatibus! Maxime!</p></div>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="subhead">Background-clip Attribute</span>
+                <ul>
+                    <li>The background-clip property defines how far the background should extend within an element.</li>
+                    <li>
+                        <ol>
+                            <li><span class="redFont fontsize20">Border-box:- </span>Default value. The background extends behind the border.
+                            <br><br>Syntax:-
+                                <p>div{background-clip: border-box;}</p>
+                                <div class="bgimgbordercolor"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel incidunt unde placeat, illo temporibus enim! Expedita quia odio voluptate, reprehenderit fugit obcaecati sapiente exercitationem assumenda aperiam esse, odit, debitis repellendus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure facilis nam beatae et praesentium quae harum minima nesciunt voluptatibus! Maxime!</p></div>
+                            </li><br><br>
+                            <li><span class="redFont fontsize20">Padding-box:- </span>The background extends to the inside edge of the border
+                            <br><br>Syntax:-
+                                <p>div{background-clip: padding-box;}</p>
+                                <div class="bgimgpaddingcolor"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel incidunt unde placeat, illo temporibus enim! Expedita quia odio voluptate, reprehenderit fugit obcaecati sapiente exercitationem assumenda aperiam esse, odit, debitis repellendus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure facilis nam beatae et praesentium quae harum minima nesciunt voluptatibus! Maxime!</p></div>
+                            </li><br><br>
+                            <li><span class="redFont fontsize20">Content-box:- </span>The background extends to the edge of the content box
+                            <br><br>Syntax:-
+                                <p>div{background-clip: content-box;}</p>
+                                <div class="bgimgcontentcolor"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel incidunt unde placeat, illo temporibus enim! Expedita quia odio voluptate, reprehenderit fugit obcaecati sapiente exercitationem assumenda aperiam esse, odit, debitis repellendus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure facilis nam beatae et praesentium quae harum minima nesciunt voluptatibus! Maxime!</p></div>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="subhead">Background-size Attribute</span>
+                <ul>
+                    <li>The background-size property specifies the size of the background images.</li>
+                    <li>There are four different syntaxes you can use with this property: 
+                        <ul>
+                        <ol>
+                            <li>the keyword syntax ("auto", "cover" and "contain"), </li>
+                            <li>the one-value syntax (sets the width of the image (height becomes "auto"), </li>
+                            <li>the two-value syntax (first value: width of the image, second value: height), </li>
+                            <li>the multiple background syntax (separated with comma).</li>
+                        </ol>
+                    </ul>
+                    </li>
+                    <li>
+                        <ol>
+                            <li><span class="redFont fontsize20">Auto:- </span>Default value. The background image is displayed in its original size.
+                                <br><br>Syntax:-
+                                <p>div{background-size: auto;}</p>
+                                <div class="bgimgauto"></div>
+                            </li><br><br>
+                            <li><span class="redFont fontsize20">Cover:- </span>Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges.
+                                <br><br>Syntax:-
+                                <p>div{background-size: cover;}</p>
+                                <div class="bgimgcover"></div>
+                            </li><br><br>
+                            <li><span class="redFont fontsize20">Contain:- </span>Resize the background image to make sure the image is fully visible	
+                                <br><br>Syntax:-
+                                <p>div{background-size: contain;}</p>
+                                <div class="bgimgcontain"></div>
+                            </li><br><br>
+                            <li><span class="redFont fontsize20">One-Value:- </span>Sets the width and height of the background image to same value / Sets the width and height of the background image in percent of the parent element when using percentage.
+                                <br><br>Syntax:-
+                                <p>div{background-size: 200px;}</p>
+                                <div class="bgimgonevalue"></div>
+                            </li><br><br>
+                            <li><span class="redFont fontsize20">Two-Value:- </span>Sets the width and height of the background image. The first value sets the width, the second value sets the height.
+                                <br><br>Syntax:-
+                                <p>div{background-size: 200px 400px;}</p>
+                                <div class="bgimgtwovalue"></div>
+                            </li><br><br>
+                        </ol>
+                    </li>    
+                </ul>
             </li>
         </ol>
     </section>
@@ -638,11 +759,11 @@
                     <li>The border-radius property is used to add rounded borders to an element:</li>
                     <li>Syntax:-
                         <ol>
-                            <li><p class="normalborder">p{border-radius:0px}
-                            <li><p class="roundborder">p{border-radius:5px}
-                            <li><p class="rounderborder">p{border-radius:8px}
-                            <li><p class="roundestborder">p{border-radius:12px}
-                            <li><p class="roundestborder2">p{border-radius:30px}
+                            <li><p class="normalborder">p{border-radius:0px}</p></li>
+                            <li><p class="roundborder">p{border-radius:5px}</p></li>
+                            <li><p class="rounderborder">p{border-radius:8px}</p></li>
+                            <li><p class="roundestborder">p{border-radius:12px}</p></li>
+                            <li><p class="roundestborder2">p{border-radius:30px}</p></li>
                         </ol>
                     </li>
                 </ul>
@@ -682,7 +803,50 @@
                         </tbody>
                 </table>
             </li>
+            <li><span class="colorHead">Border-Collapse Attributes :- </span>
+                    <ul type="square">
+                        <li>The border-collapse property sets whether table borders should collapse into a single border or be separated as in standard HTML.</li>
+                        <li>Syntax:-
+                            <ol>
+                                <li><span class="redFont fontsize20">#table1{border-collapse: separate;}</span><br><br>
+                                    <table id="table1">
+                                        <tr>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                        </tr>
+                                        <tr>
+                                        <td>Peter</td>
+                                        <td>Griffin</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Lois</td>
+                                        <td>Griffin</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <br><br>
+                                <li><span class="redFont fontsize20">#table1{border-collapse: collapse;}</span><br><br>
+                                    <table id="table2">
+                                        <tr>
+                                          <th>Firstname</th>
+                                          <th>Lastname</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Peter</td>
+                                          <td>Griffin</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Lois</td>
+                                          <td>Griffin</td>
+                                        </tr>
+                                      </table>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+            </li>
         </ol>
+
     </section>
 </body>
 
