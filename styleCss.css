@@ -21,6 +21,12 @@ td {
     border: 1px solid grey;
 }
 
+.fontsize20 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
 .redFont {
     color: red;
 }
@@ -63,4 +69,430 @@ td {
 .colorHead {
     color: indigo;
     font-size: 20px;
+}
+
+
+/* Background-Color */
+
+.bgcolorexample1 {
+    background-color: blue;
+    width: 500px;
+    height: 50px;
+    color: cornsilk;
+}
+
+.bgcolorexample2 {
+    background-color: red;
+    width: 300px;
+    height: 70px;
+    color: cornsilk;
+}
+
+.bgcolorexample3 {
+    background-color: green;
+    width: 1000px;
+    height: 40px;
+    color: cornsilk;
+}
+
+
+/* Opacity */
+
+.op9 {
+    opacity: 0.9;
+}
+
+.op6 {
+    opacity: 0.6;
+}
+
+.op3 {
+    opacity: 0.3;
+}
+
+.op1 {
+    opacity: 0.1;
+}
+
+
+/* Back-ground Image */
+
+.bgimg {
+    width: 700px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+}
+
+
+/* Background-repeat */
+
+.bgimgnorep {
+    width: 700px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: no-repeat;
+}
+
+.bgimgrepy {
+    width: 700px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: repeat-y;
+}
+
+.bgimgrepx {
+    width: 700px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: repeat-x;
+}
+
+
+/* background-position */
+
+.bgimglt {
+    width: 1400px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.bgimglc {
+    width: 1400px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.bgimglb {
+    width: 1400px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.bgimgct {
+    width: 1400px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.bgimgcc {
+    width: 1400px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bgimgcb {
+    width: 1400px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.bgimgrt {
+    width: 1400px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.bgimgrc {
+    width: 1400px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.bgimgrb {
+    width: 1400px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.bgimgper {
+    width: 1400px;
+    height: 700px;
+    border: 5px solid black;
+    background-image: url(/Images/Self.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+}
+
+
+/* Border-styles*/
+
+p.dotted {
+    border-style: dotted;
+    width: 700px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.dashed {
+    border-style: dashed;
+    width: 700px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.solid {
+    border-style: solid;
+    width: 700px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.double {
+    border-style: double;
+    width: 700px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.groove {
+    border-style: groove;
+    width: 700px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.ridge {
+    border-style: ridge;
+    width: 700px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.inset {
+    border-style: inset;
+    width: 700px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.outset {
+    border-style: outset;
+    width: 700px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.none {
+    border-style: none;
+    width: 700px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.hidden {
+    border-style: hidden;
+    width: 700px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.mix {
+    border-style: dotted dashed solid double;
+    width: 700px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+/* Border-width */
+
+p.thick {
+    border-style: solid;
+    border-width: thick;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.medium {
+    border-style: solid;
+    border-width: medium;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.thin {
+    border-style: solid;
+    border-width: thin;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+p.pixels {
+    border-style: solid;
+    border-width: 15px;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+/* Border-colors */
+
+p.bored {
+    border-color: red;
+    width: fit-content;
+}
+
+p.bogreen {
+    border-color: green;
+    width: fit-content;
+}
+
+p.boblue {
+    border-color: blue;
+    width: fit-content;
+}
+
+p.mixcolor {
+    border-style: solid;
+    border-color: red green blue yellow;
+    /* red top, green right, blue bottom and yellow left */
+    border-width: 10px;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+/* Border-sides */
+
+.fourstyle {
+    border-style: dotted solid double dashed;
+    ;
+    border-width: thick;
+    width: fit-content;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.threestyle {
+    border-style: dotted solid double;
+    ;
+    border-width: thick;
+    width: fit-content;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.twostyle {
+    border-style: dotted solid;
+    border-width: thick;
+    width: fit-content;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.onestyle {
+    border-style: dotted;
+    border-width: thick;
+    width: fit-content;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+
+/* Border-shorthand */
+
+.shorthand {
+    border: 5px solid red;
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.shorttop {
+    border-top: 5px solid red;
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.shortleft {
+    border-left: 5px solid red;
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.shortbottom {
+    border-bottom: 5px solid red;
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.shortright {
+    border-right: 5px solid red;
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.normalborder {
+    width: fit-content;
+    border: 5px solid green;
+    border-radius: 0px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.roundborder {
+    width: fit-content;
+    border: 5px solid green;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.rounderborder {
+    width: fit-content;
+    border: 5px solid green;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.roundestborder {
+    width: fit-content;
+    border: 5px solid green;
+    border-radius: 12px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.roundestborder2 {
+    width: fit-content;
+    border: 5px solid green;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 20px;
 }
