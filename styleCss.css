@@ -8,7 +8,7 @@ body {
 h3 {
     margin: 10px;
     color: crimson;
-    font-size: 25px;
+    font-size: 50px;
 }
 
 table,
@@ -19,6 +19,8 @@ td {
     color: darkseagreen;
     padding: 10px;
     border: 1px solid grey;
+    border-collapse: collapse;
+    margin-left: 10px;
 }
 
 .fontsize20 {
@@ -391,6 +393,93 @@ td {
 }
 
 
+/* Box-Model */
+
+#boximg {
+    width: 100vw;
+    height: 50vh;
+}
+
+.boxexample {
+    width: 320px;
+    height: 420px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+
+.flex1 {
+    display: flex;
+}
+
+
+/* Margins */
+
+.outerbox {
+    border: thin solid rgba(78, 92, 218, 0.801);
+    width: fit-content;
+}
+
+.margintop {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.marginright {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.marginbottom {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.marginleft {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+
+/* Margin-Shorthand */
+
+.fourmargin {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 15px;
+    margin: 20px 15px 10px 5px;
+}
+
+.threemargin {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 15px;
+    margin: 20px 15px 5px;
+}
+
+.twomargin {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 15px;
+    margin: 20px 10px;
+}
+
+.onemargin {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 15px;
+    margin: 20px;
+}
+
+
 /* Border-styles*/
 
 p.dotted {
@@ -538,7 +627,6 @@ p.mixcolor {
 
 .fourstyle {
     border-style: dotted solid double dashed;
-    ;
     border-width: thick;
     width: fit-content;
     padding: 30px;
@@ -547,7 +635,6 @@ p.mixcolor {
 
 .threestyle {
     border-style: dotted solid double;
-    ;
     border-width: thick;
     width: fit-content;
     padding: 30px;
@@ -655,4 +742,58 @@ p.mixcolor {
 
 #table2 {
     border-collapse: collapse;
+}
+
+
+/* Padding */
+
+.paddingtop {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding-top: 20px;
+}
+
+.paddingright {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding-right: 20px;
+}
+
+.paddingbottom {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding-bottom: 20px;
+}
+
+.paddingleft {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding-left: 20px;
+}
+
+
+/* Padding-Shorthand */
+
+.fourpadding {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 20px 15px 10px 5px;
+}
+
+.threepadding {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 20px 15px 5px;
+}
+
+.twopadding {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 20px 10px;
+}
+
+.onepadding {
+    border: thick solid greenyellow;
+    width: fit-content;
+    padding: 20px;
 }

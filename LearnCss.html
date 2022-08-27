@@ -97,10 +97,12 @@
         <h3>&rarr; TYPES OF BASIC CSS SELECTOR?</h3>
         <hr>
         <ol>
-            <li><span class="redFont">CSS Element Selector : </span>CSS Element Selector is used with reference to Tag Name to change the style of that particular Tag.<br><code>For Example :- <br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li><br>
-            <li><span class="redFont">CSS Id Selector : </span>CSS Id Selector is used with reference to Tag Id to change the style of that particular Tag.<br><code>For Example :- <br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#para1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li><br>
-            <li><span class="redFont">CSS Class Selector : </span>CSS Class Selector is used with reference to Tag Class to change the style of that particular Tag.<br><code>For Example :- <br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.conatiner{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li><br>
-            <li><span class="redFont">CSS Grouping Selector : </span>CSS Grouping Selector is used with reference to Multiple Tag Names, Ids Or Classses to change the style of that particular Tag.<br><code>For Example :- <br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p, div, #para1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li><br>
+            <li><span class="redFont">CSS Univarsal Selector : </span>CSS Univarsal Selector is used to selects all elements of HTML document.<br><code>For Example :- Select all elements of Entire HTML Document & set margin to 0 pixel:<br>Syntax:-<br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin:0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</code></li><br>
+            <li><span class="redFont">CSS Specific Univarsal Selector : </span>The * selector can also select all elements inside another element.<br><code>For Example :- Select all elements inside &lt;div&gt; elements and set their background color to yellow:<br>Syntax:-<br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div *{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:yellow;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</code></li><br>
+            <li><span class="redFont">CSS Element Selector : </span>CSS Element Selector is used with reference to Tag Name to change the style of that particular Tag.<br><code>For Example :- Select all &lt;p&gt; elements and set thier text color to red:<br>Syntax:-<br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</code></li><br>
+            <li><span class="redFont">CSS Id Selector : </span>CSS Id Selector is used with reference to Tag Id to change the style of that particular Tag.<br><code>For Example :- Select unique element with &lt;p id="para1"&gt; set thier text color to red:<br>Syntax:-<br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#para1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</code></li><br>
+            <li><span class="redFont">CSS Class Selector : </span>CSS Class Selector is used with reference to Tag Class to change the style of that particular Tag.<br><code>For Example :- Select all elements with &lt;div class="container"&gt; set thier text color to red:<br>Syntax:-<br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.container{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</code></li><br>
+            <li><span class="redFont">CSS Grouping Selector : </span>CSS Grouping Selector is used with reference to Multiple Tag Names, Ids Or Classses to change the style of that particular Tag.<br><code>For Example :- Select multiple elements with tag name/id/class like &lt;p&gt;,&lt;div class="container"&gt;,&lt;span id="span1"&gt; and set thier text color to red:<br>Syntax:-<br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p, .container, #span1{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</code></li><br>
         </ol>
     </section>
     <!-- Group Selectors -->
@@ -135,7 +137,8 @@
         <ol>
             <li><span class="subhead">Font-Family Attribute</span>
                 <ol>
-                    <li><span class="redFont">WEB SAFE FONTS : </span>Web safe fonts are fonts that are pre-installed by many operating systems. <br> While not all systems have the same fonts installed, you can use a web safe <span class="greenFont">font stack (use multiple font family to choose)</span>to choose several fonts <br>that look similar, and are installed on the various systems that you want to support. <br> You Can see which fonts are web safe fonts by clicking here . <a href="https://www.cssfontstack.com/">Web Safe Fonts</a><br><code>For Example :- <br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family: <span class="redFont">'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li><br></li> <br>
+                    <li><span class="redFont">WEB SAFE FONTS : </span>Web safe fonts are fonts that are pre-installed by many operating systems. <br> While not all systems have the same fonts installed, you can use a web safe <span class="greenFont">font stack (use multiple font family to choose)</span>to
+                        choose several fonts <br>that look similar, and are installed on the various systems that you want to support. <br> You Can see which fonts are web safe fonts by clicking here . <a href="https://www.cssfontstack.com/">Web Safe Fonts</a><br><code>For Example :- <br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family: <span class="redFont">'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;</li><br></li> <br>
                     <li><span class="redFont">WEB FONTS : </span>If you want to use fonts other than ones pre-installed, as of CSS3, you can use Web Fonts. <br><code>For Example :- <span class="greenFont">Google Fonts Are Most Popular One that You can Embed In your website to use Variety of fonts.</span>
                     <br>Steps You need follow to Embed Google Fonts In Your Head Tag of Your HTML Page.
                         <ol>
@@ -620,6 +623,187 @@
             </li>
         </ol>
     </section>
+    <!-- CSS BOX MODEL -->
+    <section>
+        <hr>
+        <h3>&rarr; CSS BOX MODEL</h3>
+        <hr>
+        <img id="boximg" src="/Images/BoxModel.png" alt="Box-Model">
+        <ol>
+            <li><span class="colorHead">Element-width Attribute:- </span>
+                <br><br>
+                <ul>
+                    <li>In order to set the width of an element correctly in all browsers, you need to know how the box model works.</li>
+                    <li>When you set the width property of an element with CSS, you just set the width of the content area.</li>
+                    <li>To calculate the full size of an element, you must also add padding, borders and margins.</li>
+                    <li>The total width of an element should be calculated like this:</li>
+                    <li>Total element width = width + left padding + right padding + left border + right border + left margin + right margin</li>
+                </ul>
+            </li>
+            <br><br>
+            <li><span class="colorHead">Element-height Attribute:- </span>
+                <br><br>
+                <ul>
+                    <li>In order to set the height of an element correctly in all browsers, you need to know how the box model works.</li>
+                    <li>When you set the height property of an element with CSS, you just set the height of the content area.</li>
+                    <li>To calculate the full size of an element, you must also add padding, borders and margins.</li>
+                    <li>The total height of an element should be calculated like this:</li>
+                    <li>Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</li>
+                </ul>
+            </li>
+            <br><br>
+            <li><span class="colorHead">For Example:- </span>
+                <br><br>
+                <span class="flex1">
+                    &nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 320px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:420px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: 5px solid gray;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                    <br>&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+                    <div class="boxexample"></div>
+                    <br>
+                    &larr;&larr;&larr;&larr;&larr;&larr;This &lt;div&gt; element will have a total width of 350px: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is the calculation:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;320px (width) + 20px (left + right padding)+ 10px (left + right border)+ 0px (left + right margin) = 350px
+                    <br><br>
+                    &larr;&larr;&larr;&larr;&larr;&larr;This &lt;div&gt; element will have a total height of 450px: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is the calculation:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;420px (height) + 20px (top + bottom padding)+ 10px (top + bottom border)+ 0px (top + bottom margin) = 450px
+                </span>
+            </li>
+        </ol>
+    </section>
+    <!-- CSS MARGINS -->
+    <section>
+        <hr>
+        <h3>&rarr; CSS MARGINS</h3>
+        <hr>
+        <ol>
+            <li><span class="colorHead">Margin Attributes:- </span>
+                <ul type="square">
+                    <li>The CSS margin properties are used to create space around elements, outside of any defined borders:</li>
+                    <li>With CSS, you have full control over the margins.</li>
+                    <li>There are four properties for setting the margin for each side of an element (top, right, bottom, and left).</li>
+                        <ul>
+                            <li>margin-top</li>
+                            <li>margin-right</li>
+                            <li>margin-bottom</li>
+                            <li>margin-left</li>
+                        </ul>
+                    <li>All the margin properties can have the following values:</li>
+                        <ul>
+                            <li>auto - You can set the margin property to auto to horizontally center the element within its container.</li>
+                            <li>length - You can specifies a margin in px, pt, cm, etc..</li>
+                            <li>Percentage % - You can specifies a margin in % of the width of the containing element.</li>
+                            <li>inherit - You can specifies that the margin should be inherited from the parent element.</li>
+                        </ul>
+                    <li><span class="redFont fontsize20">MARGIN-TOP</span>
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="margintop">
+                                        <li>margin-top: 20px;</li>
+                                        <li>top margin is 20px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li><span class="redFont fontsize20">MARGIN-RIGHT</span>
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="marginright">
+                                        <li>margin-right: 20px;</li>
+                                        <li>right margin is 20px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li><span class="redFont fontsize20">MARGIN-BOTTOM</span>
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox"> 
+                                    <ul class="marginbottom">
+                                        <li>margin-bottom: 20px;</li>
+                                        <li>bottom margin is 20px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li><span class="redFont fontsize20">MARGIN-LEFT</span>
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="marginleft">
+                                        <li>margin-left: 20px;</li>
+                                        <li>left margin is 20px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">Margin-Shorthand Attributes:- </span>
+                <ul type="square">
+                    <li>To shorten the code, it is possible to specify all the margin properties in one property.</li>
+                    <li>If the margin property has four values:
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="fourmargin">
+                                        <li>margin: 20px 15px 10px 5px;</li>
+                                        <li>top margin is 20px</li>
+                                        <li>right margin is 15px</li>
+                                        <li>bottom margin is 10px</li>
+                                        <li>left margin is 5px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li>If the margin property has three values:
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="threemargin">
+                                        <li>margin: 20px 15px 5px;</li>
+                                        <li>top margin is 20px</li>
+                                        <li>right and left margins are 15px</li>
+                                        <li>bottom margin is 5px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li>If the margin property has two values:
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox"> 
+                                    <ul class="twomargin">
+                                        <li>margin: 20px 10px;</li>
+                                        <li>top and bottom margins are 20px</li>
+                                        <li>right and left margins are 10px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li>If the margin property has one value:
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="onemargin">
+                                        <li>margin: 20px;</li>
+                                        <li>all four sides margins are 20px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </section>
     <!-- CSS Border -->
     <section>
         <hr>
@@ -846,7 +1030,132 @@
                     </ul>
             </li>
         </ol>
-
+    </section>
+    <!-- CSS PADDINGS -->
+    <section>
+        <hr>
+        <h3>&rarr; CSS PADDINGS</h3>
+        <hr>
+        <ol>
+            <li><span class="colorHead">Padding Attributes:- </span>
+                <ul type="square">
+                    <li>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</li>
+                    <li>With CSS, you have full control over the paddins.</li>
+                    <li>There are four properties for setting the paddings for each side of an element (top, right, bottom, and left).</li>
+                        <ul>
+                            <li>padding-top</li>
+                            <li>padding-right</li>
+                            <li>padding-bottom</li>
+                            <li>padding-left</li>
+                        </ul>
+                    <li>All the padding properties can have the following values:</li>
+                        <ul>
+                            <li>length - You can specifies a padding in px, pt, cm, etc..</li>
+                            <li>Percentage % - You can specifies a padding in % of the width of the containing element.</li>
+                            <li>inherit - You can specifies that the padding should be inherited from the parent element.</li>
+                        </ul>
+                    <li><span class="redFont fontsize20">PADDING-TOP</span>
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="paddingtop">
+                                        <li>padding-top: 20px;</li>
+                                        <li>top padding is 20px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li><span class="redFont fontsize20">PADDING-RIGHT</span>
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="paddingright">
+                                        <li>padding-right: 20px;</li>
+                                        <li>right padding is 20px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li><span class="redFont fontsize20">PADDING-BOTTOM</span>
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox"> 
+                                    <ul class="paddingbottom">
+                                        <li>padding-bottom: 20px;</li>
+                                        <li>bottom padding is 20px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li><span class="redFont fontsize20">PADDING-LEFT</span>
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="paddingleft">
+                                        <li>padding-left: 20px;</li>
+                                        <li>left padding is 20px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">Padding-Shorthand Attributes:- </span>
+                <ul type="square">
+                    <li>To shorten the code, it is possible to specify all the padding properties in one property.</li>
+                    <li>If the padding property has four values:
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="fourpadding">
+                                        <li>padding: 20px 15px 10px 5px;</li>
+                                        <li>top padding is 20px</li>
+                                        <li>right padding is 15px</li>
+                                        <li>bottom padding is 10px</li>
+                                        <li>left padding is 5px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li>If the padding property has three values:
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="threepadding">
+                                        <li>padding: 20px 15px 5px;</li>
+                                        <li>top padding is 20px</li>
+                                        <li>right and left paddings are 15px</li>
+                                        <li>bottom padding is 5px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li>If the padding property has two values:
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox"> 
+                                    <ul class="twopadding">
+                                        <li>padding: 20px 10px;</li>
+                                        <li>top and bottom paddings are 20px</li>
+                                        <li>right and left paddings are 10px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                    <li>If the padding property has one value:
+                        <ul>
+                            <li>Syntax:- </li>
+                                <div class="outerbox">
+                                    <ul class="onepadding">
+                                        <li>padding: 20px;</li>
+                                        <li>all four sides paddings are 20px</li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
     </section>
 </body>
 
