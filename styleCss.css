@@ -45,6 +45,12 @@ td {
     color: green;
 }
 
+.listcream {
+    color: rgb(102, 100, 235);
+    text-transform: uppercase;
+    line-height: 2em;
+}
+
 .subhead {
     font-size: large;
     font-size: 30px;
@@ -71,6 +77,77 @@ td {
 .colorHead {
     color: indigo;
     font-size: 20px;
+}
+
+
+/* Text-decoration */
+
+.line {
+    text-decoration-line: none;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.decocolor {
+    text-decoration-color: blue;
+}
+
+.overline {
+    text-decoration-line: overline;
+}
+
+.line-through {
+    text-decoration-line: line-through;
+}
+
+.underlinesolid {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+}
+
+.underlinedotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: blue;
+}
+
+.underlinedouble {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: green;
+}
+
+.underlinedashed {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: red;
+}
+
+.underlinewavy {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: green;
+}
+
+.underlineauto {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: blue;
+    text-decoration-thickness: auto;
+}
+
+.underline50 {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+    text-decoration-thickness: 50%;
+}
+
+.shorthanddeco {
+    text-decoration: underline solid green 50%;
 }
 
 
@@ -796,4 +873,314 @@ p.mixcolor {
     border: thick solid greenyellow;
     width: fit-content;
     padding: 20px;
+}
+
+
+/* Text-Alignlast */
+
+.txtalignleft {
+    text-align: left;
+    border: thick solid greenyellow;
+    width: 70vw;
+    padding: 20px;
+}
+
+.txtaligncenter {
+    text-align: center;
+    border: thick solid greenyellow;
+    width: 70vw;
+    padding: 20px;
+}
+
+.txtalignright {
+    text-align: right;
+    border: thick solid greenyellow;
+    width: 70vw;
+    padding: 20px;
+}
+
+.txtalignjustify {
+    text-align: justify;
+    border: thick solid greenyellow;
+    width: 70vw;
+    padding: 20px;
+}
+
+.txtalignstart {
+    text-align: start;
+    border: thick solid greenyellow;
+    width: 70vw;
+    padding: 20px;
+}
+
+.txtalignend {
+    text-align: end;
+    border: thick solid greenyellow;
+    width: 70vw;
+    padding: 20px;
+}
+
+
+/* Text-align-last */
+
+.txtalignleftlast {
+    text-align-last: left;
+    border: thick solid greenyellow;
+    width: 70vw;
+    padding: 20px;
+}
+
+.txtaligncenterlast {
+    text-align-last: center;
+    border: thick solid greenyellow;
+    width: 70vw;
+    padding: 20px;
+}
+
+.txtalignrightlast {
+    text-align-last: right;
+    border: thick solid greenyellow;
+    width: 70vw;
+    padding: 20px;
+}
+
+.txtalignjustifylast {
+    text-align-last: justify;
+    border: thick solid greenyellow;
+    width: 70vw;
+    padding: 20px;
+}
+
+
+/* Float & Clear */
+
+.containerfloat {
+    width: 72.5vw;
+    height: 30vh;
+    border: 3px solid purple;
+    background-color: rgb(250, 226, 205);
+}
+
+.floatnone {
+    float: none;
+    width: 10%;
+    height: 10%;
+}
+
+.floatleft {
+    float: left;
+    width: 10%;
+    height: 10%;
+}
+
+.floatright {
+    float: right;
+    width: 10%;
+    height: 10%;
+}
+
+.parentfloat {
+    float: left;
+}
+
+.floatinherit {
+    float: inherit;
+    width: 10%;
+    height: 10%;
+}
+
+.divfloat1 {
+    background: rgb(223, 109, 109);
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.divfloat2 {
+    background: rgb(109, 223, 157);
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.divfloat3 {
+    background: rgb(109, 136, 223);
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.clearBoth {
+    clear: both;
+    padding-top: 20px;
+    text-align: right;
+}
+
+.containerclear {
+    width: 72.5vw;
+    border: 3px solid purple;
+    padding: 30px;
+    background-color: rgb(250, 226, 205);
+}
+
+.divclear1 {
+    float: left;
+    padding: 10px;
+    border: 3px dashed #73AD21;
+}
+
+.divclear2 {
+    padding: 10px;
+    border: 3px solid red;
+    clear: none;
+}
+
+.divclear3 {
+    float: left;
+    padding: 10px;
+    border: 3px dashed #73AD21;
+}
+
+.divclear4 {
+    padding: 10px;
+    border: 3px solid red;
+    clear: left;
+}
+
+.divclear5 {
+    float: right;
+    padding: 10px;
+    border: 3px dashed #73AD21;
+}
+
+.divclear6 {
+    padding: 10px;
+    border: 3px solid red;
+    clear: right;
+}
+
+.divclear7 {
+    padding: 10px;
+    border: 3px solid red;
+    float: left;
+}
+
+.divclear8 {
+    float: right;
+    padding: 10px;
+    border: 3px dashed #73AD21;
+}
+
+.divclear9 {
+    padding: 10px;
+    border: 3px solid blue;
+    clear: both;
+}
+
+
+/* Pseudo-Classes */
+
+
+/* unvisited link */
+
+a:link,
+.black {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: green;
+    text-decoration: none;
+}
+
+
+/* selected link */
+
+a:active {
+    color: red;
+    text-decoration: none;
+}
+
+
+/* Element hover */
+
+.hoverp {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+.hoverdiv {
+    background-color: rgb(109, 136, 223);
+    padding: 30px;
+    color: sandybrown;
+    cursor: pointer;
+}
+
+.hoverdiv:hover .hoverp {
+    display: block;
+    cursor: pointer;
+}
+
+
+/* Pseudo Element */
+
+.pseudoline::first-line {
+    color: green;
+}
+
+.pseudoletter::first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+.pseudoimgb::before {
+    content: url(/Images/Smiley.png);
+}
+
+.pseudotxtb::before {
+    content: "New Added Text ";
+}
+
+.pseudoimga::after {
+    content: url(/Images/Smiley.png);
+}
+
+.pseudotxta::after {
+    content: "New Added Text ";
+}
+
+
+/* Pseudo Marker Element */
+
+.ulmark {
+    list-style-type: square;
+}
+
+::marker {
+    color: red;
+    font-size: 20px;
+}
+
+
+/* Pseudo Selection Element */
+
+::selection {
+    color: red;
+    background: yellow;
 }
