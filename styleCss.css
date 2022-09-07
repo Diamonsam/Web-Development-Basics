@@ -1184,3 +1184,32 @@ a:active {
     color: red;
     background: yellow;
 }
+
+
+/* Overflow */
+
+.divsize {
+    width: 600px;
+    height: 200px;
+    border: 2px solid palevioletred;
+}
+
+.visible {
+    overflow: visible;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.clip {
+    overflow: clip;
+}
+
+.auto {
+    overflow: auto;
+}
+
+.scroll {
+    overflow: scroll;
+}

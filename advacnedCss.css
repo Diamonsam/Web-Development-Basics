@@ -1,0 +1,32 @@
+/* Universal Selector to remove default margin & padding from all elements.  Comment this to see effects before navbar.*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar ul {
+    /* add overflow to take effect to li floated elements */
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    /* Notice how background color will not take effect after you apply float property because float elements get overflowed from parent element so it will not take parent element styling effects*/
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: red;
+}

@@ -2077,6 +2077,124 @@
             </li>
         </ol>
     </section>
+    <!-- CSS OVERFLOW PROPERTY -->
+    <section>
+        <hr>
+        <h3>&rarr; CSS OVERFLOW PROPERTY</h3>
+        <hr>
+        <span class="subhead">&rarr;&nbsp;The overflow property specifies what should happen if content overflows an element's box.</span>
+        <ul>
+            <li>For example, it can be used to:
+                <ol>
+                    <li>This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.</li>
+                    <li>The overflow property only works for block elements with a specified height.</li>
+                </ol>
+            </li>
+            <li><code><span class="greenFont">Syntax For overflow :- </span><br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br><span class="redFont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  overflow: scroll;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;</span>&lt;/style&gt;<br></code></li>
+        </ul>
+        <ol>
+            <li><span class="colorHead">The overflow: visible Property:- </span>
+                <ul type="square">
+                    <li>The overflow is not clipped. It renders outside the element's box. This is default.</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>div { overflow: visible; }</li>
+                            <li>Check below div text content is bigger than div size so it overflow the content outside div area.</li>
+                            <li>
+                                <div class="divsize visible">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio fugiat blanditiis
+                                    laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis quisquam excepturi.
+                                    Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum, nulla vel reprehenderit
+                                    delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur dicta voluptates doloribus
+                                    eveniet pariatur rem hic? Beatae commodi quos doloremque, architecto tempora doloribus id rerum fugiat atque. Veniam, provident. Totam placeat esse rerum veniam mollitia! Facilis pariatur mollitia quia, animi eum sequi
+                                    fuga unde optio perspiciatis blanditiis aliquam quae! Asperiores at quae dolore eveniet inventore, a veritatis quod quas itaque impedit ducimus soluta enim molestiae, recusandae tempore, facere autem facilis. Officiis
+                                    id rerum impedit aspernatur aperiam, quia ipsam deserunt illum! Ab, dolorum magni. Quaerat soluta architecto autem ex labore praesentium libero? Laboriosam deserunt quae quam sunt incidunt eos!</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li><br><br><br><br><br><br><br><br><br><br><br>
+            <li><span class="colorHead">The overflow: hidden Property:- </span>
+                <ul type="square">
+                    <li>The overflow is clipped, and the rest of the content will be invisible. Content can be scrolled programmatically (e.g. by setting scrollLeft or scrollTo())</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>div { overflow: hidden; }</li>
+                            <li>Check below div text content is bigger than div size so it will hide overflowing content when overflow is set to hidden.</li>
+                            <li>
+                                <div class="divsize hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio fugiat blanditiis
+                                    laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis quisquam excepturi.
+                                    Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum, nulla vel reprehenderit
+                                    delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur dicta voluptates doloribus
+                                    eveniet pariatur rem hic? Beatae commodi quos doloremque, architecto tempora doloribus id rerum fugiat atque. Veniam, provident. Totam placeat esse rerum veniam mollitia! Facilis pariatur mollitia quia, animi eum sequi
+                                    fuga unde optio perspiciatis blanditiis aliquam quae! Asperiores at quae dolore eveniet inventore, a veritatis quod quas itaque impedit ducimus soluta enim molestiae, recusandae tempore, facere autem facilis. Officiis
+                                    id rerum impedit aspernatur aperiam, quia ipsam deserunt illum! Ab, dolorum magni. Quaerat soluta architecto autem ex labore praesentium libero? Laboriosam deserunt quae quam sunt incidunt eos!</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">The overflow: clip Property:- </span>
+                <ul type="square">
+                    <li>The overflow is clipped, and the rest of the content will be invisible. Forbids scrolling, including programmatic scrolling.</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>div { overflow: clip; }</li>
+                            <li>Check below div text content is bigger than div size so it will make content invisible when overflow is set to clip.</li>
+                            <li>
+                                <div class="divsize clip">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio fugiat blanditiis
+                                    laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis quisquam excepturi.
+                                    Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum, nulla vel reprehenderit
+                                    delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur dicta voluptates doloribus
+                                    eveniet pariatur rem hic? Beatae commodi quos doloremque, architecto tempora doloribus id rerum fugiat atque. Veniam, provident. Totam placeat esse rerum veniam mollitia! Facilis pariatur mollitia quia, animi eum sequi
+                                    fuga unde optio perspiciatis blanditiis aliquam quae! Asperiores at quae dolore eveniet inventore, a veritatis quod quas itaque impedit ducimus soluta enim molestiae, recusandae tempore, facere autem facilis. Officiis
+                                    id rerum impedit aspernatur aperiam, quia ipsam deserunt illum! Ab, dolorum magni. Quaerat soluta architecto autem ex labore praesentium libero? Laboriosam deserunt quae quam sunt incidunt eos!</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">The overflow: auto Property:- </span>
+                <ul type="square">
+                    <li>If overflow is clipped, a scroll-bar should be added to see the rest of the content.</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>div { overflow: auto; }</li>
+                            <li>Check below div text content is bigger than div size so it will add scroll bar to make content visible when scrolling when overflow is set to auto.</li>
+                            <li>
+                                <div class="divsize auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio fugiat blanditiis
+                                    laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis quisquam excepturi.
+                                    Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum, nulla vel reprehenderit
+                                    delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur dicta voluptates doloribus
+                                    eveniet pariatur rem hic? Beatae commodi quos doloremque, architecto tempora doloribus id rerum fugiat atque. Veniam, provident. Totam placeat esse rerum veniam mollitia! Facilis pariatur mollitia quia, animi eum sequi
+                                    fuga unde optio perspiciatis blanditiis aliquam quae! Asperiores at quae dolore eveniet inventore, a veritatis quod quas itaque impedit ducimus soluta enim molestiae, recusandae tempore, facere autem facilis. Officiis
+                                    id rerum impedit aspernatur aperiam, quia ipsam deserunt illum! Ab, dolorum magni. Quaerat soluta architecto autem ex labore praesentium libero? Laboriosam deserunt quae quam sunt incidunt eos!</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span class="colorHead">The overflow: scroll Property:- </span>
+                <ul type="square">
+                    <li>The overflow is clipped, but a scroll-bar is added to see the rest of the content</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>div { overflow: scroll; }</li>
+                            <li>Check below div text content is bigger than div size so it will add scroll bar when overflow is set to scroll.</li>
+                            <li>
+                                <div class="divsize scroll">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio fugiat blanditiis
+                                    laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis quisquam excepturi.
+                                    Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum, nulla vel reprehenderit
+                                    delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur dicta voluptates doloribus
+                                    eveniet pariatur rem hic? Beatae commodi quos doloremque, architecto tempora doloribus id rerum fugiat atque. Veniam, provident. Totam placeat esse rerum veniam mollitia! Facilis pariatur mollitia quia, animi eum sequi
+                                    fuga unde optio perspiciatis blanditiis aliquam quae! Asperiores at quae dolore eveniet inventore, a veritatis quod quas itaque impedit ducimus soluta enim molestiae, recusandae tempore, facere autem facilis. Officiis
+                                    id rerum impedit aspernatur aperiam, quia ipsam deserunt illum! Ab, dolorum magni. Quaerat soluta architecto autem ex labore praesentium libero? Laboriosam deserunt quae quam sunt incidunt eos!</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </section>
 </body>
 
 </html>
