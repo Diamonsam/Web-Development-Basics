@@ -490,6 +490,27 @@ td {
 }
 
 
+/* Box-sizing */
+
+.withboxsizing {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+.withoutboxsizing {
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+}
+
+.boxsizing {
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+
 /* Margins */
 
 .outerbox {
