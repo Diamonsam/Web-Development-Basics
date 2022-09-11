@@ -2259,6 +2259,265 @@
             </li>
         </ol>
     </section>
+    <!-- CSS DISPLAY PROPERTY -->
+    <section>
+        <hr>
+        <h3>&rarr; CSS DISPLAY PROPERTY</h3>
+        <hr>
+        <span class="subhead">&rarr;&nbsp;The display property specifies the display behavior (the type of rendering box) of an element.</span>
+        <ul>
+            <li>There are many different display values:
+                <ol>
+                    <li>inline</li>
+                    <li>block</li>
+                    <li>flex</li>
+                    <li>inline-flex </li>
+                    <li>inline-block</li>
+                    <li>none</li>
+                </ol>
+            </li>
+            <li><code><span class="greenFont">Syntax For display :- </span><br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br><span class="redFont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  display: inline-flex;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;</span>&lt;/style&gt;<br></code></li>
+        </ul>
+        <ol>
+            <li><span class="colorHead">The display: inline Property:- </span>
+                <ul type="square">
+                    <li>Displays an element as an inline element (like &lt;span&gt;). Any height and width properties will have no effect.</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>div { display: inline; }</li>
+                            <li>Check below highlighted text
+                                <div class="inlinediv">(div is block element but we made it inline using display:inline; property).</div> is another div but still it's inline with other text instead of being on a new line </li>
+                            <li>
+                                <div class="regulardiv">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    <div class="inlinediv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quod.</div>Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio
+                                    fugiat blanditiis laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis
+                                    quisquam excepturi. Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum,
+                                    nulla vel reprehenderit delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur
+                                    dicta voluptates doloribus eveniet pariatur rem hic?</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li><br><br><br><br>
+            <li><span class="colorHead">The display: block Property:- </span>
+                <ul type="square">
+                    <li>Displays an element as a block element (like &lt;p&gt;). It starts on a new line, and takes up the whole width.</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>span { display: block; }</li>
+                            <li>Check below highlighted text <span class="blockspan">(working as block element which take full width)</span> is span element which is inline element but we have set display:block property to this span so it act as block element.
+                            </li>
+                            <li>
+                                <div class="regulardiv">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span class="blockspan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quod.</span>Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati
+                                    maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio fugiat blanditiis laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur?
+                                    Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis quisquam excepturi. Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore
+                                    laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum, nulla vel reprehenderit delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium
+                                    sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur dicta voluptates doloribus eveniet pariatur rem hic?</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li><br><br><br><br>
+            <li><span class="colorHead">The display: flex Property:- </span>
+                <ul type="square">
+                    <li>Displays an element as a block-level flex container.</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>span <br>{ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: flex; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;justify-content: flex-end;<br>}</li>
+                            <li>Check below highlighted text
+                                <span class="flexspan">(working as block-level flex container, notice how flex proprty justify-content: flex-end; work with display:flex property)</span> is span element which is inline element but we have set display:block
+                                property to this span so it act as block element.
+                            </li>
+                            <li>
+                                <div class="regulardiv">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    <div class="flexspan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quod.</div>Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio
+                                    fugiat blanditiis laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis
+                                    quisquam excepturi. Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum,
+                                    nulla vel reprehenderit delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur
+                                    dicta voluptates doloribus eveniet pariatur rem hic?</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li><br><br><br><br>
+
+            <li><span class="colorHead">The display: inline-flex Property:- </span>
+                <ul type="square">
+                    <li>Displays an element as a inline-level flex container.</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>div <br>{ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: inline-flex; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;justify-content: flex-end;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 50%; <br>}</li>
+                            <li>Check below highlighted text
+                                <div class="inlineflex">(working as inline-level flex container, notice how flex proprty justify-content: flex-end; & width:50%; work with display:inline-flex property)</div> is div element which is block element but we have set display:inline-flex
+                                property to this div so it act as inline element.
+                            </li>
+                            <li>
+                                <div class="regulardiv">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    <div class="inlineflex">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quod.</div>Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio
+                                    fugiat blanditiis laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis
+                                    quisquam excepturi. Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum,
+                                    nulla vel reprehenderit delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur
+                                    dicta voluptates doloribus eveniet pariatur rem hic?</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li><br><br><br><br>
+
+            <li><span class="colorHead">The display: inline-block Property:- </span>
+                <ul type="square">
+                    <li>Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values.</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>div <br>{ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display: inline-block; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 200px;<br>}</li>
+                            <li>Check below highlighted text
+                                <div class="inlineblock">(working as inline-level block container, notice how width proprty work with display:inline-block property)</div> is div element which is block element but we have set display:inline-block property to this div so it act
+                                as inline element.
+                            </li>
+                            <li>
+                                <div class="regulardiv">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    <div class="inlineblock">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quod.</div>Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio
+                                    fugiat blanditiis laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis
+                                    quisquam excepturi. Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum,
+                                    nulla vel reprehenderit delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur
+                                    dicta voluptates doloribus eveniet pariatur rem hic?</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li><br><br><br><br>
+            <li><span class="colorHead">Some Other Display Values Are Mention Below:- </span><br><br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Value.</th>
+                            <th>Description.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>inline</td>
+                            <td>Displays an element as an inline element (like &lt;span&gt;). Any height and width properties will have no effect.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>block</td>
+                            <td>Displays an element as a block element (like &lt;p&gt;). It starts on a new line, and takes up the whole width.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>contents</td>
+                            <td>Makes the container disappear, making the child elements children of the element the next level up in the DOM.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>flex</td>
+                            <td>Displays an element as a block-level flex container.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>grid</td>
+                            <td>Displays an element as a block-level grid container.</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>inline-block</td>
+                            <td>Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values.</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>inline-flex</td>
+                            <td>Displays an element as an inline-level flex container.</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>inline-grid</td>
+                            <td>Displays an element as an inline-level grid container.</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>inline-table</td>
+                            <td>The element is displayed as an inline-level table.</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>list-item</td>
+                            <td>Let the element behave like a &lt;li&gt; element.</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>run-in</td>
+                            <td>Displays an element as either block or inline, depending on context.</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>table</td>
+                            <td>Let the element behave like a &lt;table&gt; element.</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>table-caption</td>
+                            <td>Let the element behave like a &lt;caption&gt; element.</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>table-column-group</td>
+                            <td>Let the element behave like a &lt;colgroup&gt; element.</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>table-header-group</td>
+                            <td>Let the element behave like a &lt;thead&gt; element.</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>table-footer-group</td>
+                            <td>Let the element behave like a &lt;tfoot&gt; element.</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>table-row-group</td>
+                            <td>Let the element behave like a &lt;tbody&gt; element.</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>table-cell</td>
+                            <td>Let the element behave like a &lt;td&gt; element.</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>table-column</td>
+                            <td>Let the element behave like a &lt;col&gt; element.</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>table-row</td>
+                            <td>Let the element behave like a &lt;tr&gt; element.</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>none</td>
+                            <td>The element is completely removed.</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>initial</td>
+                            <td>Sets this property to its default value..</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>inherit</td>
+                            <td>Inherits this property from its parent element..</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+
+    </section>
+
     <!-- CSS POSITION PROPERTY -->
     <section>
         <hr>
@@ -2275,112 +2534,203 @@
                     <li>sticky</li>
                 </ol>
             </li>
-            <li>Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.</li>
-            <li><code><span class="greenFont">Syntax For position :- </span><br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br><span class="redFont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  position: absolute;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;</span>&lt;/style&gt;<br></code></li>
+            <li>Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+            </li>
+            <li><code><span class="greenFont">Syntax For position :- </span><br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br><span class="redFont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  position: absolute;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  top: 10%;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;</span>&lt;/style&gt;<br></code></li>
         </ul>
         <ol>
-            <li><span class="colorHead">The overflow: visible Property:- </span>
+            <li><span class="colorHead">The position: static Property:- </span>
                 <ul type="square">
-                    <li>The overflow is not clipped. It renders outside the element's box. This is default.</li>
+                    <li>HTML elements are positioned static by default.</li>
+                    <li>Static positioned elements are not affected by the top, bottom, left, and right properties.</li>
+                    <li>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</li>
                     <li>Syntax:-
                         <ul>
-                            <li>div { overflow: visible; }</li>
-                            <li>Check below div text content is bigger than div size so it overflow the content outside div area.</li>
+                            <li>div { position: static;} <span class="greenFont"> /* You do not need to write this declaration as its by default the same */</span></li>
+                            <li>Check Below all divs are there in thier order as it comes in html .</li><br>
                             <li>
-                                <div class="divsize visible">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio fugiat blanditiis
-                                    laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis quisquam excepturi.
-                                    Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum, nulla vel reprehenderit
-                                    delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur dicta voluptates doloribus
-                                    eveniet pariatur rem hic? Beatae commodi quos doloremque, architecto tempora doloribus id rerum fugiat atque. Veniam, provident. Totam placeat esse rerum veniam mollitia! Facilis pariatur mollitia quia, animi eum sequi
-                                    fuga unde optio perspiciatis blanditiis aliquam quae! Asperiores at quae dolore eveniet inventore, a veritatis quod quas itaque impedit ducimus soluta enim molestiae, recusandae tempore, facere autem facilis. Officiis
-                                    id rerum impedit aspernatur aperiam, quia ipsam deserunt illum! Ab, dolorum magni. Quaerat soluta architecto autem ex labore praesentium libero? Laboriosam deserunt quae quam sunt incidunt eos!</div>
+                                <div class="positioncontainer">
+                                    <div class="positionbox">1</div>
+                                    <div class="positionbox">2</div>
+                                    <div class="positionbox">3</div>
+                                    <div class="positionbox">4</div>
+                                </div>
                             </li>
                         </ul>
                     </li>
                 </ul>
-            </li><br><br><br><br><br><br><br><br><br><br><br>
-            <li><span class="colorHead">The overflow: hidden Property:- </span>
+            </li><br><br>
+            <li><span class="colorHead">The position: relative Property:- </span>
                 <ul type="square">
-                    <li>The overflow is clipped, and the rest of the content will be invisible. Content can be scrolled programmatically (e.g. by setting scrollLeft or scrollTo())</li>
+                    <li>An element with position: relative; is positioned relative to its normal position.</li>
+                    <li>Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.</li>
+                    <li>Other content will not be adjusted to fit into any gap left by the element.</li>
                     <li>Syntax:-
                         <ul>
-                            <li>div { overflow: hidden; }</li>
-                            <li>Check below div text content is bigger than div size so it will hide overflowing content when overflow is set to hidden.</li>
+                            <li>div2 <br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;position: relative;<span class="greenFont"> /* Relative to its normal position and will leave space between it normal position & relative position. */</span><br>&nbsp;&nbsp;&nbsp;&nbsp;top:20px;<br>&nbsp;&nbsp;&nbsp;&nbsp;left:20px;<br>}<br></li>
+                            <li>Check Below div2 is moved away from its normal position by top 20px & left 20px.</li><br>
                             <li>
-                                <div class="divsize hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio fugiat blanditiis
-                                    laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis quisquam excepturi.
-                                    Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum, nulla vel reprehenderit
-                                    delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur dicta voluptates doloribus
-                                    eveniet pariatur rem hic? Beatae commodi quos doloremque, architecto tempora doloribus id rerum fugiat atque. Veniam, provident. Totam placeat esse rerum veniam mollitia! Facilis pariatur mollitia quia, animi eum sequi
-                                    fuga unde optio perspiciatis blanditiis aliquam quae! Asperiores at quae dolore eveniet inventore, a veritatis quod quas itaque impedit ducimus soluta enim molestiae, recusandae tempore, facere autem facilis. Officiis
-                                    id rerum impedit aspernatur aperiam, quia ipsam deserunt illum! Ab, dolorum magni. Quaerat soluta architecto autem ex labore praesentium libero? Laboriosam deserunt quae quam sunt incidunt eos!</div>
+                                <div class="positioncontainer">
+                                    <div class="positionbox">1</div>
+                                    <div class="positionbox box2">2</div>
+                                    <div class="positionbox">3</div>
+                                    <div class="positionbox">4</div>
+                                </div>
                             </li>
                         </ul>
                     </li>
                 </ul>
-            </li>
-            <li><span class="colorHead">The overflow: clip Property:- </span>
+            </li><br><br>
+            <li><span class="colorHead">The position: absolute Property:- </span>
                 <ul type="square">
-                    <li>The overflow is clipped, and the rest of the content will be invisible. Forbids scrolling, including programmatic scrolling.</li>
+                    <li>An element with position: absolute; is positioned relative to the nearest positioned ancestor (means it will take position relative to nearest element which position is set & count that element as parent.).</li>
+                    <li>However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.(means if no nearest elements with position is set it will count body as parent element)</li>
                     <li>Syntax:-
                         <ul>
-                            <li>div { overflow: clip; }</li>
-                            <li>Check below div text content is bigger than div size so it will make content invisible when overflow is set to clip.</li>
+                            <li>.positioncontainer2 <br>{
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;position: relative;<span class="greenFont"> /* This will serve as parent to next absolute position element. */</span>
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid black;
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;background-color: lightcyan;
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;
+                                <br> } .box3 <br>{
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;<span class="greenFont"> /* It will take position with respect to above element.  */</span>
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;top: 0px;
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;left: 0px;
+                                <br> }
+                            </li>
+                            <li>Check Below div2 is moved away from its normal position by top 20px & left 20px.</li><br>
                             <li>
-                                <div class="divsize clip">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio fugiat blanditiis
-                                    laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis quisquam excepturi.
-                                    Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum, nulla vel reprehenderit
-                                    delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur dicta voluptates doloribus
-                                    eveniet pariatur rem hic? Beatae commodi quos doloremque, architecto tempora doloribus id rerum fugiat atque. Veniam, provident. Totam placeat esse rerum veniam mollitia! Facilis pariatur mollitia quia, animi eum sequi
-                                    fuga unde optio perspiciatis blanditiis aliquam quae! Asperiores at quae dolore eveniet inventore, a veritatis quod quas itaque impedit ducimus soluta enim molestiae, recusandae tempore, facere autem facilis. Officiis
-                                    id rerum impedit aspernatur aperiam, quia ipsam deserunt illum! Ab, dolorum magni. Quaerat soluta architecto autem ex labore praesentium libero? Laboriosam deserunt quae quam sunt incidunt eos!</div>
+                                <div class="positioncontainer2">
+                                    <div class="positionbox">1</div>
+                                    <div class="positionbox">2</div>
+                                    <div class="positionbox box3">3</div>
+                                    <div class="positionbox">4</div>
+                                </div>
                             </li>
                         </ul>
                     </li>
                 </ul>
-            </li>
-            <li><span class="colorHead">The overflow: auto Property:- </span>
+            </li><br><br>
+            <li><span class="colorHead">The position: fixed Property:- </span>
                 <ul type="square">
-                    <li>If overflow is clipped, a scroll-bar should be added to see the rest of the content.</li>
+                    <li>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</li>
+                    <li>A fixed element does not leave a gap in the page where it would normally have been located.</li>
+                    <li>Notice the fixed element in the upper-right corner of the page. &lt;DIV&gt; FIXED</li>
                     <li>Syntax:-
                         <ul>
-                            <li>div { overflow: auto; }</li>
-                            <li>Check below div text content is bigger than div size so it will add scroll bar to make content visible when scrolling when overflow is set to auto.</li>
+                            <li>divfixed <br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;position: fixed;<span class="greenFont"> /* position of this is fixed on the view port & will always be there. */</span><br>&nbsp;&nbsp;&nbsp;&nbsp;top:20%;<br>&nbsp;&nbsp;&nbsp;&nbsp;right:0px;<br>}<br></li>
+                            <li>Notice the fixed element in the upper-right corner of the page. 20% down from top & 0px attached to right. Which does not move even when you scroll.<span class="fixeddiv">&lt;DIV&gt; FIXED</span></li>
                             <li>
-                                <div class="divsize auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio fugiat blanditiis
-                                    laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis quisquam excepturi.
-                                    Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum, nulla vel reprehenderit
-                                    delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur dicta voluptates doloribus
-                                    eveniet pariatur rem hic? Beatae commodi quos doloremque, architecto tempora doloribus id rerum fugiat atque. Veniam, provident. Totam placeat esse rerum veniam mollitia! Facilis pariatur mollitia quia, animi eum sequi
-                                    fuga unde optio perspiciatis blanditiis aliquam quae! Asperiores at quae dolore eveniet inventore, a veritatis quod quas itaque impedit ducimus soluta enim molestiae, recusandae tempore, facere autem facilis. Officiis
-                                    id rerum impedit aspernatur aperiam, quia ipsam deserunt illum! Ab, dolorum magni. Quaerat soluta architecto autem ex labore praesentium libero? Laboriosam deserunt quae quam sunt incidunt eos!</div>
+                                <div class="divfixed fixeddiv">
+                                    &lt;DIV&gt; FIXED
+                                </div>
                             </li>
                         </ul>
                     </li>
                 </ul>
-            </li>
-            <li><span class="colorHead">The overflow: scroll Property:- </span>
+            </li><br><br>
+            <li><span class="colorHead">The position: sticky Property:- </span>
                 <ul type="square">
-                    <li>The overflow is clipped, but a scroll-bar is added to see the rest of the content</li>
+                    <li>An element with position: sticky; is positioned based on the user's scroll position.</li>
+                    <li>A sticky element toggles between relative and fixed, depending on the scroll position. </li>
+                    <li>It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</li>
                     <li>Syntax:-
                         <ul>
-                            <li>div { overflow: scroll; }</li>
-                            <li>Check below div text content is bigger than div size so it will add scroll bar when overflow is set to scroll.</li>
+                            <li>divsticky <br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;position: sticky;<span class="greenFont"> /* position of this div is sticky .the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.Scroll back up to remove the stickyness. */</span><br>&nbsp;&nbsp;&nbsp;&nbsp;top:0%;<br>}<br></li>
                             <li>
-                                <div class="divsize scroll">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur ipsa ipsum at, fugiat dolor quis doloribus obcaecati maxime odit hic illum nulla corrupti id quae quidem cupiditate. Aliquid distinctio fugiat blanditiis
-                                    laboriosam, fugit ipsa dolorum, alias, consequuntur magni earum adipisci ipsam unde quaerat laborum expedita tenetur? Neque, cum fugit sed porro minima expedita vel beatae nesciunt voluptatibus reiciendis quisquam excepturi.
-                                    Cumque laborum, quam repellendus voluptatibus fugiat doloribus sequi vitae dolorem voluptatum minus, quo, tempore laboriosam exercitationem. Sequi reiciendis, pariatur explicabo corrupti atque eum, nulla vel reprehenderit
-                                    delectus fuga molestiae accusamus eligendi. Quae quidem maxime corporis est debitis aliquid soluta laudantium sint porro excepturi inventore illo vel quas earum molestias voluptate, aspernatur dicta voluptates doloribus
-                                    eveniet pariatur rem hic? Beatae commodi quos doloremque, architecto tempora doloribus id rerum fugiat atque. Veniam, provident. Totam placeat esse rerum veniam mollitia! Facilis pariatur mollitia quia, animi eum sequi
-                                    fuga unde optio perspiciatis blanditiis aliquam quae! Asperiores at quae dolore eveniet inventore, a veritatis quod quas itaque impedit ducimus soluta enim molestiae, recusandae tempore, facere autem facilis. Officiis
-                                    id rerum impedit aspernatur aperiam, quia ipsam deserunt illum! Ab, dolorum magni. Quaerat soluta architecto autem ex labore praesentium libero? Laboriosam deserunt quae quam sunt incidunt eos!</div>
+                                &darr;Try to scroll inside this frame to understand how sticky positioning works.&darr;<br><br>
+                                <div class="containersticky">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi quis illo ducimus incidunt aliquam saepe quasi obcaecati dolorem consequatur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui mollitia
+                                        aliquid, tenetur sit laborum debitis vel quibusdam reiciendis aperiam sunt. Cupiditate voluptatem voluptas minus? Voluptatum doloremque illum quis asperiores non ipsum dicta rem illo mollitia nobis, perspiciatis
+                                        animi totam officia nihil, eligendi dignissimos! Ipsam, nemo, officiis optio omnis illum est tenetur commodi mollitia, deleniti accusantium obcaecati saepe amet error quasi velit id sapiente illo fugiat nobis. Perferendis
+                                        possimus cumque perspiciatis at provident mollitia cum voluptatibus excepturi ad assumenda iste, molestiae placeat dolor tempora rerum dolore reiciendis, totam quod et modi aperiam! Repellendus suscipit laboriosam,
+                                        cumque asperiores molestias laborum fugit aliquam?</p>
+                                    <div class="divsticky">
+                                        &lt;DIV&gt; STICKY
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quo delectus impedit architecto, consequuntur ab corporis ut maxime quaerat velit nostrum! Quia exercitationem ab, aspernatur aut similique labore quidem
+                                        praesentium id at assumenda consequuntur fuga atque! Nihil atque blanditiis asperiores quae accusamus reiciendis tempore voluptate aut, earum magni magnam! Velit earum officiis vel animi quo aperiam, modi alias
+                                        consectetur molestiae consequuntur doloremque provident incidunt labore fuga nemo, est iste assumenda! Hic laudantium non ipsa sunt doloribus, placeat veritatis rerum cum saepe, earum fugit modi quibusdam ut doloremque.
+                                        Aliquid repellendus id amet assumenda? Quasi vel quibusdam magnam laboriosam quos esse maxime at unde enim reiciendis ut maiores, praesentium impedit ex velit, ad labore dolor tempora sit, earum illo incidunt. Adipisci,
+                                        repudiandae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus quisquam ipsum tenetur omnis magnam deserunt, cumque explicabo nihil, enim doloribus nam fuga sequi sapiente, nobis in officiis repudiandae
+                                        consectetur necessitatibus numquam fugiat rem accusantium unde libero ut. Aliquam soluta perspiciatis at tempore reiciendis. Quaerat libero ipsum eligendi deleniti nesciunt eum debitis temporibus tenetur in veritatis
+                                        voluptatem, velit natus consequuntur aliquid porro explicabo omnis sapiente eaque maxime amet. Itaque ipsa excepturi at minima, nemo quos minus ad ipsam, quia accusamus maxime sed sequi temporibus dolorem impedit
+                                        architecto enim harum nostrum sint ducimus? Id deleniti dolor qui quod quo deserunt at veniam ad. Veritatis beatae eaque dolorem repudiandae inventore pariatur atque cupiditate dolore provident nam ipsa ipsum alias
+                                        voluptatum facilis, commodi nesciunt magni autem nulla minima enim rerum illum nemo. Accusantium rem aspernatur perferendis, possimus sit, error quod natus, fugiat tenetur tempore soluta laudantium architecto magni?
+                                        Odit repellendus eum cumque minima beatae ipsum provident, corrupti fugiat ea. Hic dolores laborum corrupti voluptatibus nihil aspernatur, iure earum quaerat eveniet mollitia illum esse soluta nam minus labore ipsum
+                                        sit eius consequatur? Cumque neque natus minima magnam, est mollitia, similique, aliquam minus praesentium asperiores quod. Labore dignissimos dolorem nam suscipit tempora quidem facere nobis optio.praesentium id
+                                        at assumenda consequuntur fuga atque! Nihil atque blanditiis asperiores quae accusamus reiciendis tempore voluptate aut, earum magni magnam! Velit earum officiis vel animi quo aperiam, modi alias consectetur molestiae
+                                        consequuntur doloremque provident incidunt labore fuga nemo, est iste assumenda! Hic laudantium non ipsa sunt doloribus, placeat veritatis rerum cum saepe, earum fugit modi quibusdam ut doloremque. Aliquid repellendus
+                                        id amet assumenda? Quasi vel quibusdam magnam laboriosam quos esse maxime at unde enim reiciendis ut maiores, praesentium impedit ex velit, ad labore dolor tempora sit, earum illo incidunt. Adipisci, repudiandae?
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus quisquam ipsum tenetur omnis magnam deserunt, cumque explicabo nihil, enim doloribus nam fuga sequi sapiente, nobis in officiis repudiandae consectetur
+                                        necessitatibus numquam fugiat rem accusantium unde libero ut. Aliquam soluta perspiciatis at tempore reiciendis. Quaerat libero ipsum eligendi deleniti nesciunt eum debitis temporibus tenetur in veritatis voluptatem,
+                                        velit natus consequuntur aliquid porro explicabo omnis sapiente eaque maxime amet. Itaque ipsa excepturi at minima, nemo quos minus ad ipsam, quia accusamus maxime sed sequi temporibus dolorem impedit architecto
+                                        enim harum nostrum sint ducimus? Id deleniti dolor qui quod quo deserunt at veniam ad. Veritatis beatae eaque dolorem repudiandae inventore pariatur atque cupiditate dolore provident nam ipsa ipsum alias voluptatum
+                                        facilis, commodi nesciunt magni autem nulla minima enim rerum illum nemo. Accusantium rem aspernatur perferendis, possimus sit, error quod natus, fugiat tenetur tempore soluta laudantium architecto magni? Odit repellendus
+                                        eum cumque minima beatae ipsum provident, corrupti fugiat ea. Hic dolores laborum corrupti voluptatibus nihil aspernatur, iure earum quaerat eveniet mollitia illum esse soluta nam minus labore ipsum sit eius consequatur?
+                                        Cumque neque natus minima magnam, est mollitia, similique, aliquam minus praesentium asperiores quod. Labore dignissimos dolorem nam suscipit tempora quidem facere nobis optio.praesentium id at assumenda consequuntur
+                                        fuga atque! Nihil atque blanditiis asperiores quae accusamus reiciendis tempore voluptate aut, earum magni magnam! Velit earum officiis vel animi quo aperiam, modi alias consectetur molestiae consequuntur doloremque
+                                        provident incidunt labore fuga nemo, est iste assumenda! Hic laudantium non ipsa sunt doloribus, placeat veritatis rerum cum saepe, earum fugit modi quibusdam ut doloremque. Aliquid repellendus id amet assumenda?
+                                        Quasi vel quibusdam magnam laboriosam quos esse maxime at unde enim reiciendis ut maiores, praesentium impedit ex velit, ad labore dolor tempora sit, earum illo incidunt. Adipisci, repudiandae? Lorem ipsum dolor
+                                        sit, amet consectetur adipisicing elit. Possimus quisquam ipsum tenetur omnis magnam deserunt, cumque explicabo nihil, enim doloribus nam fuga sequi sapiente, nobis in officiis repudiandae consectetur necessitatibus
+                                        numquam fugiat rem accusantium unde libero ut. Aliquam soluta perspiciatis at tempore reiciendis. Quaerat libero ipsum eligendi deleniti nesciunt eum debitis temporibus tenetur in veritatis voluptatem, velit natus
+                                        consequuntur aliquid porro explicabo omnis sapiente eaque maxime amet. Itaque ipsa excepturi at minima, nemo quos minus ad ipsam, quia accusamus maxime sed sequi temporibus dolorem impedit architecto enim harum
+                                        nostrum sint ducimus? Id deleniti dolor qui quod quo deserunt at veniam ad. Veritatis beatae eaque dolorem repudiandae inventore pariatur atque cupiditate dolore provident nam ipsa ipsum alias voluptatum facilis,
+                                        commodi nesciunt magni autem nulla minima enim rerum illum nemo. Accusantium rem aspernatur perferendis, possimus sit, error quod natus, fugiat tenetur tempore soluta laudantium architecto magni? Odit repellendus
+                                        eum cumque minima beatae ipsum provident, corrupti fugiat ea. Hic dolores laborum corrupti voluptatibus nihil aspernatur, iure earum quaerat eveniet mollitia illum esse soluta nam minus labore ipsum sit eius consequatur?
+                                        Cumque neque natus minima magnam, est mollitia, similique, aliquam minus praesentium asperiores quod. Labore dignissimos dolorem nam suscipit tempora quidem facere nobis optio.</p>
+
+                                </div>
                             </li>
                         </ul>
                     </li>
                 </ul>
+            </li><br><br>
+
+            <li><span class="colorHead">How to position text over an image::- </span>
+                <div class="imgcontainer">
+                    <img class="imgposition" src="/Images/Square.jpeg" alt="square">
+                    <div class="topleft">Top-Left<br>Syntax:-<br>.topleft
+                        <br> {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;top: 8px;
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;left: 16px;
+                        <br>}
+                    </div>
+                    <div class="bottomleft">Bottom-Left<br>Syntax:-<br>.bottomleft
+                        <br> {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;bottom: 8px;
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;left: 16px;
+                        <br>}
+                    </div>
+                    <div class="center">Center<br>Syntax:-<br>.center
+                        <br> {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;top:50%;<span class="greenFont">/* TO MOVE TEXT HORIZONTALLY CENTER */</span>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;width:100%;<span class="greenFont">/* TO MOVE TEXT VERTICALLY CENTER */</span>
+                        <br>}
+                    </div>
+                    <div class="topright">Top-Right<br>Syntax:-<br>.topright
+                        <br> {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;top: 8px;
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;right: 16px;
+                        <br>}
+                    </div>
+                    <div class="bottomright">Bottom-Right<br>Syntax:-<br>.bottomright
+                        <br> {
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;bottom: 8px;
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;right: 16px;
+                        <br>}
+                    </div>
+
+                </div>
             </li>
         </ol>
     </section>
+
 </body>
 
 </html>
