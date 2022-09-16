@@ -11,7 +11,7 @@
 
 <body>
     <!-- What is CSS -->
-    <header>
+    <header id="top">
         <hr>
         <h3>&rarr; WHAT IS CSS?</h3>
         <hr>
@@ -2623,6 +2623,7 @@
                             <li>
                                 <div class="divfixed fixeddiv">
                                     &lt;DIV&gt; FIXED
+                                    <a href="#bottom"><button>Bottom</button></a>
                                 </div>
                             </li>
                         </ul>
@@ -2730,6 +2731,126 @@
             </li>
         </ol>
     </section>
+    <!-- CSS VISIBILITY PROPERTY -->
+    <section>
+        <hr>
+        <h3>&rarr; CSS VISIBILITY PROPERTY</h3>
+        <hr>
+        <span class="subhead">&rarr;&nbsp;The visibility property specifies whether or not an element is visible.</span>
+        <ul>
+            <li>When you hide element using visibility: hidden porperty , Hidden elements still takes up its own space on the page. </li>
+            <li>You can use the display:none property to both hide and remove an element from the document layout! This will not take any space for that element.</li>
+            <li>There are two main values :-	
+                <ol>
+                    <li>visible :- Default value. The element is visible.</li>
+                    <li>hidden :- The element is hidden (but still takes up space).</li>
+                </ol>
+            </li>
+            <li><code><span class="greenFont">Syntax For visibility :- </span><br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br><span class="redFont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  visibility: hidden;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;</span>&lt;/style&gt;<br></code></li>
+        </ul>
+        <ol>
+            <li><span class="colorHead">Element with Visibility Property:- </span>
+                <ul type="square">
+                    <li>Notice here there are 4 divs. 
+                        <ol>
+                            <li>div1</li>
+                            <li>div2</li>
+                            <li>div3</li>
+                            <li>div4</li>
+                        </ol>
+                    </li>
+                    <li>div3 has visibility set to hidden. Notice how its behaving.</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>div3 { visibility: hidden;}</li>
+                            <li>Check Below all divs are there  and div3 is hidden but it's still taking it's space.</li><br>
+                            <li>
+                                <div class="positioncontainer">
+                                    <div class="positionbox">1</div>
+                                    <div class="positionbox">2</div>
+                                    <div class="positionbox visihidden">3</div>
+                                    <div class="positionbox">4</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li><br><br>
+            <li><span class="colorHead">Element with Display Property:- </span>
+                <ul type="square">
+                    <li>Notice here also there are 4 divs. 
+                        <ol>
+                            <li>div1</li>
+                            <li>div2</li>
+                            <li>div3</li>
+                            <li>div4</li>
+                        </ol>
+                    </li>
+                    <li>div3 has display set to none. Notice how its behaving.</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>div3 { display: none;}</li>
+                            <li>Check only div1,div2,div4 is taking space , as div3 display property set to none it'ss hide and remove div3 from the document layout! </li><br>
+                            <li>
+                                <div class="positioncontainer">
+                                    <div class="positionbox">1</div>
+                                    <div class="positionbox">2</div>
+                                    <div class="positionbox dispnone">3</div>
+                                    <div class="positionbox">4</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li><br><br>
+        </ol>
+    </section>
+    <!-- CSS Z-INDEX PROPERTY -->
+    <section>
+        <hr>
+        <h3>&rarr; CSS Z-INDEX PROPERTY</h3>
+        <hr>
+        <span class="subhead">&rarr;&nbsp;The z-index property specifies the stack order of an element.</span>
+        <ul>
+            <li>An element with greater stack order is always in front of an element with a lower stack order.</li>
+            <li>z-index will not work on default position value static.</li>
+            <li>z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).</li>
+            <li><code><span class="greenFont">Syntax For z-index :- </span><br>&nbsp;&nbsp;&nbsp;&lt;style&gt;<br><span class="redFont">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;div<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  position: relative;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  z-index: 2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;</span>&lt;/style&gt;<br></code></li>
+        </ul>
+        <ol>
+            <li><span class="colorHead">Element with z-index Property:- </span>
+                <ul type="square">
+                    <li>Notice here there are 4 divs all position relative. 
+                        <ol>
+                            <li>div1</li>
+                            <li>div2</li>
+                            <li>div3</li>
+                            <li>div4</li>
+                        </ol>
+                    </li>
+                    <li>div1 has z-index set to 1. Notice how its behaving.</li>
+                    <li>div2 has z-index set to 2. Notice how its behaving.</li>
+                    <li>div3 has z-index set to 1. Notice how its behaving.</li>
+                    <li>div4 has z-index set to 2. Notice how its behaving.</li>
+                    <li>Syntax:-
+                        <ul>
+                            <li>div2 { position:relative ; z-index: 2;}</li>
+                            <li>Check Below div2 & div4 has z-index set to value 2 & div1 & div3 has z-index set to value 1.</li><br>
+                            <li>
+                                <div class="zconatiner">
+                                    <div class="positionbox zind1">1 - lower stack order</div>
+                                    <div class="positionbox zind2">2 - greater stack order</div>
+                                    <div class="positionbox zind3">3 - lower stack order</div>
+                                    <div class="positionbox zind4">4 - greater stack order</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+    <div id="bottom"><a href="#top"><button style="padding:20px; position: fixed; bottom:0; right:0;">TOP</button></a></div>
 
 </body>
 
