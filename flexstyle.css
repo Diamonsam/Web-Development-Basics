@@ -54,6 +54,9 @@ color:#ffffff;
 .flexcolumn{
     flex-direction: column;
 }
+.flexrow{
+    flex-direction: row;
+}
 
 .x-center{
     justify-content: center;
