@@ -4,67 +4,1093 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/flexstyle.css">
+    <link rel="stylesheet" href="/styleResponsive.css">
     <title>Learn Flex-Box Model With Samy</title>
 </head>
 <body>
-    <div class="header">
-        <h1>CSS Flexbox Layout Module</h1>
-    </div>
-    <div class="desc flex flexcolumn">
-        <p>&rArr;&nbsp;&nbsp;&nbsp;The Flexbox Layout (Flexible Box) module aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
-        <p>&rArr;&nbsp;&nbsp;&nbsp;The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
-        <p>&rArr;&nbsp;&nbsp;&nbsp;Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
-        <p>&rArr;&nbsp;&nbsp;&nbsp;Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
-    </div>
-    <div class="header">
-        <h1>CSS Flexbox Basics</h1>
-    </div>
-    <div class="desc flex flexcolumn y-center">
-        <p>&rArr;&nbsp;&nbsp;&nbsp;Since flexbox is a whole module and not a single property, it involves a lot of things including its whole set of properties. Some of them are meant to be set on the container (parent element, known as “flex container”) whereas the others are meant to be set on the children (said “flex items”).</p>
-        <p>&rArr;&nbsp;&nbsp;&nbsp;If “regular” layout is based on both block and inline flow directions, the flex layout is based on “flex-flow directions”. Please have a look at this figure from the specification, explaining the main idea behind the flex layout.</p>
-        <p class="flex y-center"><span class="fbFont">&rArr;</span>&nbsp;&nbsp;&nbsp;Items will be laid out following either the main axis (from main-start to main-end) or the cross axis (from cross-start to cross-end).</p>
-        <div class="flex">
-            <div class="flex w-50"><img id="flex-basic" src="/Images/Css-Flex-Basic.png" alt="Css-flex-basic"></div>
+    <div class="container-fluid d-flex flex-column">
+        <div class="w-100 p-1 bgBlack"></div>
+        <span class="fontRed fs-4">&rArr; CSS Flexbox</span>
+        <div class="w-100 p-1 bgBlack"></div>
+        <span class="fs-3 p-4">&rArr; CSS Flexbox Layout Module</span>
+        <span class="fs-3 px-10">&rArr; Before the Flexbox Layout module, there were four layout modes:
             <ul>
-                <li><span class="sub-header">Main axis &rArr;&nbsp;&nbsp;&nbsp;</span>The main axis of a flex container is the primary axis along which flex items are laid out. Beware, it is not necessarily horizontal; it depends on the flex-direction property</li>
-                <li><span class="sub-header">Main-start | Main-end&rArr;&nbsp;&nbsp;&nbsp;</span>The flex items are placed within the container starting from main-start and going to main-end.</li>
-                <li><span class="sub-header">Main size &rArr;&nbsp;&nbsp;&nbsp;</span>A flex item’s width or height, whichever is in the main dimension, is the item’s main size. The flex item’s main size property is either the ‘width’ or ‘height’ property, whichever is in the main dimension.</li>
-                <li><span class="sub-header">Cross axis &rArr;&nbsp;&nbsp;&nbsp;</span>The axis perpendicular to the main axis is called the cross axis. Its direction depends on the main axis direction.</li>
-                <li><span class="sub-header">Cross-start | Cross-end&rArr;&nbsp;&nbsp;&nbsp;</span>Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.</li>
-                <li><span class="sub-header">Cross size &rArr;&nbsp;&nbsp;&nbsp;</span>The width or height of a flex item, whichever is in the cross dimension, is the item’s cross size. The cross size property is whichever of ‘width’ or ‘height’ that is in the cross dimension.</li>
+                <li class="fs-2 p-2">Block, for sections in a webpage</li>
+                <li class="fs-2 p-2">Inline, for text</li>
+                <li class="fs-2 p-2">Table, for two-dimensional table data</li>
+                <li class="fs-2 p-2">Positioned, for explicit position of an element</li>
             </ul>
+        </span>
+        <div class="w-100 p-1 bgBlack"></div>
+        <span class="fontRed fs-2">&rArr; The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.</span>
+        <div class="w-100 p-1 bgBlack"></div>
+    </div>
+    <!-- Flexbox Elements -->
+    <div class="container-fluid">
+        <div class="d-flex flex-column">
+            <div class="w -100 p-1 bgRed"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; Flexbox Elements</div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="container fs-2">
+                <div>&rArr; To start using the Flexbox model, you need to first define a flex container.</div>
+                <div class="bold fontBlue m-5">&rArr; Syntax For Defining a Flex Container :-</div>
+                <code class="fontLightBlue">
+                    &lt;div class="flex-container"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                    &lt;div&gt;
+                </code>
+                <div class="bold fontBlue m-5">&rArr; Syntax Result :-</div>
+                <div class="flex-container bgLightBlue h-20 w-auto mb-3">
+                    <div class="m-3 p-1"></div>
+                    <div class="flex-item border bgWhite p-3 m-3">Item 1</div>
+                    <div class="flex-item border bgWhite p-3 m-3">Item 2</div>
+                    <div class="flex-item border bgWhite p-3 m-3">Item 3</div>
+                </div>
+                <div class="bold fontBlue m-5">&rArr; Here Blue Background Represent Flex-Container & White Boxes Represent Flex-Items</div>
+            </div>
         </div>
     </div>
-    <div class="header">
-        <h1>CSS Flex-Container</h1>
-    </div>
-    <div class="desc flex">
-        <p class="flex w-50 x-center"><span class="fbFont">&rArr;</span>&nbsp;&nbsp;&nbsp;The flex container</p>
-        <p class="flex w-50 x-center"><span class="fbFont">&rArr;</span>&nbsp;&nbsp;&nbsp;The flex items</p>
-    </div>
-    <div class="desc flex">
-        <p class="flex w-50 x-center"><span class="fbFont">&rArr;</span>&nbsp;&nbsp;&nbsp;Properties for the Parent (flex container)</p>
-        <p class="flex w-50 x-center"><span class="fbFont">&rArr;</span>&nbsp;&nbsp;&nbsp;Properties for the Children (flex items)</p>
-    </div>
-    <div class="desc flex">
-        <!-- Display Property for Flex-container -->
-        <div class="flex w-50 border"><span class="fbFont">&rArr;D</span>isplay Property:-<br>.container<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display:flex<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display:inline-flex<br>}<br>
-            This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.
+    <!-- Flex Container & It's Properties -->
+    <div class="container-fluid">
+        <div class="d-flex flex-column">
+            <div class="w -100 p-1 bgRed"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; Flex Container & It's Properties</div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; Parent Element (Container)</div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="container fs-2">
+                <div class="bold fontBlue m-5">&rArr; How To Make Div As Flex-Container:-</div>
+                <code class="fontLightBlue">
+                    &lt;div class="flex-container" <span class="fontRed">style="display:flex"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                    &lt;div&gt;
+                </code>
+                <div class="fontLightRed">&rArr; Like we specified in above Syntax The flex container becomes flexible by setting the display property to flex:</div>
+                <div class="bold fontBlue m-5">&rArr; Syntax Result :-</div>
+                <div class="flex-container bgLightBlue h-10 w-50" style="display: flex">
+                    <div class="flex-item bgWhite p-3 m-3">Item 1</div>
+                    <div class="flex-item bgWhite p-3 m-3">Item 2</div>
+                    <div class="flex-item bgWhite p-3 m-3">Item 3</div>
+                </div>
+                <div class="bold fontBlue m-5">&rArr; Here Blue Background Represent Flex-Container & White Boxes Represent Flex-Items</div>
+            </div>
         </div>
-        <!-- Order Property for Flex-items -->
-        <div class="flex w-50 border ">
-            <span class="fbFont">&rArr;O</span>rder Property:-<br>.item<br>{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;order:2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;order:4<br>}<br>
-            By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.<br>
-            <div class="flex w-5 item y-center x-center">1</div>
-            <div class="flex w-5 item y-center x-center">2</div>
-            <div class="flex w-5 item y-center x-center">3</div>
-            <div class="flex w-5 item y-center x-center">4</div>
-            <div class="flex w-5 item y-center x-center">&rArr;</div>
-            <div class="flex w-5 item y-center x-center" id="item1">1</div>
-            <div class="flex w-5 item y-center x-center" id="item2">2</div>
-            <div class="flex w-5 item y-center x-center" id="item3">3</div>
-            <div class="flex w-5 item y-center x-center" id="item4">4</div>
+        <!-- Flex Container Property -->
+        <div class="d-flex flex-column fs-3">
+            <div class="fontLightRed">
+                <ul>
+                    <li>There are six different properties you can set for flex-container:
+                        <ol class="fontGreen">
+                            <li>flex-direction</li>
+                            <li>flex-wrap</li>
+                            <li>flex-flow</li>
+                            <li>justify-content</li>
+                            <li>align-items</li>
+                            <li>align-content</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div class="container fontRed d-flex flex-column">
+                <!-- Flex-Direction Properties -->
+                <div class="fs-3 ms-10">1 . The flex-direction Properties
+                    <ul>
+                        <li class="fs-2 fontBlue">The flex-direction property defines in which direction the container wants to stack the flex items.</li>
+                        <li class="fs-2 fontBlue">Flex-Direction Property Have 4 Different Values :- 
+                            <ol class="fs-2">
+                                <!-- flex-direction:column -->
+                                <li> <span class="fontBlue">flex-direction:column;</span> &rArr; <span class="fontGreen"> The column value stacks the flex items vertically (from top to bottom)</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">flex-direction:column;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-10" style="display: flex; flex-direction: column;">
+                                                <div class="flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- flex-direction:column-reverse -->
+                                <li> 
+                                    <span class="fontBlue">flex-direction:column-reverse;</span> &rArr; <span class="fontGreen"> The column-reverse value stacks the flex items vertically (but from bottom to top)</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">flex-direction:column-reverse;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-10" style="display: flex; flex-direction: column-reverse;">
+                                                <div class="flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- flex-direction:row -->
+                                <li> 
+                                    <span class="fontBlue">flex-direction:row;</span> &rArr; <span class="fontGreen"> The row value stacks the flex items horizontally (from left to right)</span><span class="bgYellow fontBlack fs-2">&rarr; This Is Default Value</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">flex-direction:row;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex; flex-direction: row;">
+                                                <div class="flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- flex-direction:row-reverse -->
+                                <li>
+                                    <span class="fontBlue">flex-direction:row-reverse;</span> &rArr; <span class="fontGreen"> The row-reverse value stacks the flex items horizontally (but from right to left)</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">flex-direction:row-reverse;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex; flex-direction: row-reverse;">
+                                                <div class="flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Flex-Wrap Properties -->
+                <div class="fs-3 ms-10">2 . The flex-wrap Property
+                    <ul>
+                        <li class="fs-2 fontBlue">The flex-wrap property specifies whether the flex items should wrap or not.</li>
+                        <li class="fs-2 fontBlue">Flex-wrap Property Have 3 Different Values :- 
+                            <ol class="fs-2">
+                                <!-- flex-wrap:wrap -->
+                                <li> 
+                                    <span class="fontBlue">flex-wrap:wrap;</span> &rArr; <span class="fontGreen"> The wrap value specifies that the flex items will wrap if necessary</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">flex-wrap:wrap;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 4 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 5 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 6 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex; flex-wrap: wrap;">
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 3</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 4</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 5</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 6</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- flex-wrap:no-wrap -->
+                                <li> 
+                                    <span class="fontBlue">flex-wrap:no-wrap;</span> &rArr; <span class="fontGreen"> The nowrap value specifies that the flex items will not wrap (this is default)</span><span class="bgYellow fontBlack fs-2">&rarr; This Is Default Value</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">flex-wrap:nowrap;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 4 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 5 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 6 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex; flex-wrap:nowrap;">
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 3</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 4</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 5</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 6</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- flex-wrap:wrap-reverse -->
+                                <li> 
+                                    <span class="fontBlue">flex-wrap:wrap-reverse;</span> &rArr; <span class="fontGreen"> The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">flex-wrap:wrap-reverse;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 4 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 5 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 6 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex; flex-wrap:wrap-reverse;">
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 3</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 4</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 5</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 6</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Flex-Flow Shorthand Property -->
+                <div class="fs-3 ms-10">3 . The flex-flow Property
+                    <ul>
+                        <li class="fs-2 fontBlue">The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
+                            <ul class="fs-2">
+                                <!-- flex-flow:row wrap -->
+                                <li> 
+                                    <span class="fontBlue">flex-flow:row wrap;</span> &rArr; <span class="fontGreen"> The flex-flow : row wrap value specifies that the flex-direction would be row and  items will wrap if necessary</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">flex-flow: row wrap;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 4 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 5 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 6 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex; flex-flow:row wrap;">
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 3</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 4</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 5</div>
+                                                <div class="w-20 flex-item bgWhite p-3 m-3">Item 6</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Justify-Content Properties -->
+                <div class="fs-3 ms-10">4 . The justify-content Properties
+                    <ul>
+                        <li class="fs-2 fontBlue">The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).</li>
+                        <li class="fs-2 fontBlue">Justify-content Property Have 6 Different Values :- 
+                            <ol class="fs-2">
+                                <!-- justify-content:flex-start -->
+                                <li>
+                                    <span class="fontBlue">justify-content:flex-start;</span> &rArr; <span class="fontGreen"> The flex-start value aligns the flex items at the beginning of the container.</span><span class="bgYellow fontBlack fs-2">&rarr; This Is Default Value</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">justify-content:flex-start;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-30 w-auto" style="display: flex; justify-content: flex-start;">
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- justify-content:flex-end -->
+                                <li>
+                                    <span class="fontBlue">justify-content:flex-end;</span> &rArr; <span class="fontGreen"> The flex-end value aligns the flex items at the end of the container.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">justify-content:flex-end;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-30 w-auto" style="display: flex; justify-content: flex-end;">
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- justify-content:center -->
+                                <li>
+                                    <span class="fontBlue">justify-content:center;</span> &rArr; <span class="fontGreen"> The center value aligns the flex items at the center of the container.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">justify-content:center;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-30" style="display: flex; justify-content: center;">
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- justify-content:space-around -->
+                                <li>
+                                    <span class="fontBlue">justify-content:space-around;</span> &rArr; <span class="fontGreen"> The space-around value displays the flex items with space before, between, and after the lines.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">justify-content:space-around;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-30" style="display: flex; justify-content:space-around;">
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <!-- justify-content:space-between -->
+                                <li>
+                                    <span class="fontBlue">justify-content:space-between;</span> &rArr; <span class="fontGreen"> The space-between value displays the flex items with space between the lines.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">justify-content:space-between;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-30" style="display: flex; justify-content: space-between;">
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <!-- justify-content:space-evenly -->
+                                <li>
+                                    <span class="fontBlue">justify-content:space-evenly;</span> &rArr; <span class="fontGreen"> The space-evenly value will have equal space around displays flex items.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">justify-content:space-evenly;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-30" style="display: flex; justify-content: space-evenly;">
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Align-Items Properties -->
+                <div class="fs-3 ms-10">5 . The align-items Properties
+                    <ul>
+                        <li class="fs-2 fontBlue">The align-items property specifies the default alignment for items inside the flexible container on the cross-axis (vertically).</li>
+                        <li class="fs-2 fontBlue">align-items Property Have 5 Different Values :- 
+                            <ol class="fs-2">
+                                <!-- align-items:stretch -->
+                                <li>
+                                    <span class="fontBlue">align-items:stretch;</span> &rArr; <span class="fontGreen"> The stretch value stretches the flex lines to take up the remaining space .</span><span class="bgYellow fontBlack fs-2">&rarr; This Is Default Value</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-items:stretch;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-30 w-auto" style="display: flex; align-items: stretch;">
+                                                <div class="flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- align-items:flex-start -->
+                                <li>
+                                    <span class="fontBlue">align-items:flex-start;</span> &rArr; <span class="fontGreen"> The flex-start value aligns the flex items at the top of the container.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-items:flex-start;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-30 w-auto" style="display: flex; align-items:flex-start;">
+                                                <div class="flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- align-items:flex-end -->
+                                <li>
+                                    <span class="fontBlue">align-items:flex-end;</span> &rArr; <span class="fontGreen"> The flex-end value aligns the flex items at the bottom of the container.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-items:flex-end;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-30 w-auto" style="display: flex; align-items:flex-end;">
+                                                <div class="flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- align-items:center -->
+                                <li>
+                                    <span class="fontBlue">align-items:center;</span> &rArr; <span class="fontGreen"> The center value aligns the flex items in the middle of the container.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-items:center;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-30 w-auto" style="display: flex; align-items:center;">
+                                                <div class="flex-item bgWhite p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgWhite p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- align-items:baseline -->
+                                <li>
+                                    <span class="fontBlue">align-items:baseline;</span> &rArr; <span class="fontGreen"> The baseline value aligns the flex items such as their baselines aligns. the example uses different font-size to demonstrate that the items gets aligned by the text baseline:</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-items:baseline;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; &lt;h1&gt; Item 1 &lt;/h1&gt; &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; &lt;h6&gt; Item 2 &lt;/h6&gt; &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; &lt;h4&gt; Item 3 &lt;/h4&gt; &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-40 w-auto" style="display: flex; align-items:baseline;">
+                                                <div class="flex-item bgWhite h-20 p-3 m-3"><h1>Item 1</h1></div>
+                                                <div class="flex-item bgWhite h-30 p-3 m-3"><h6>Item 2</h6></div>
+                                                <div class="flex-item bgWhite h-10 p-3 m-3"><h4>Item 3</h4></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Align-Content Properties -->
+                <div class="fs-3 ms-10">6 . The align-content Properties
+                    <ul>
+                        <li class="fs-2 fontBlue">The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines. There must be multiple lines of items for this property to have any effect!</li>
+                        <li class="fs-2 fontBlue">align-content Property Have 7 Different Values :- 
+                            <ol class="fs-2">
+                                <!-- align-content:stretch -->
+                                <li>
+                                    <span class="fontBlue">align-content:stretch;</span> &rArr; <span class="fontGreen"> The stretch value stretches the flex lines to take up the remaining space .</span><span class="bgYellow fontBlack fs-2">&rarr; This Is Default Value</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-content:stretch;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgPink h-50 w-auto" style="display: flex; flex-wrap: wrap; align-content:stretch;">
+                                                <div class="flex-item bgLightRed w-50 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgLightBlue w-50 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgLightGreen w-50 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- align-content:center -->
+                                <li>
+                                    <span class="fontBlue">align-content:center;</span> &rArr; <span class="fontGreen"> The center value displays display the flex lines in the middle of the container.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-content:center;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgPink h-50 w-auto" style="display: flex; flex-wrap: wrap; align-content:center;">
+                                                <div class="flex-item bgLightRed w-50 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgLightBlue w-50 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgLightGreen w-50 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- align-content:flex-start -->
+                                <li>
+                                    <span class="fontBlue">align-content:flex-start;</span> &rArr; <span class="fontGreen"> The flex-start value displays the flex lines at the top/start of the container.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-content:flex-start;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgPink h-50 w-auto" style="display: flex; flex-wrap: wrap; align-content:flex-start;">
+                                                <div class="flex-item bgLightRed w-50 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgLightBlue w-50 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgLightGreen w-50 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- align-content:flex-end -->
+                                <li>
+                                    <span class="fontBlue">align-content:flex-end;</span> &rArr; <span class="fontGreen"> The flex-end value displays the flex lines at the bottom/end of the container.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-content:flex-end;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgPink h-50 w-auto" style="display: flex; flex-wrap: wrap; align-content:flex-end;">
+                                                <div class="flex-item bgLightRed w-50 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgLightBlue w-50 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgLightGreen w-50 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- align-content:space-between -->
+                                <li>
+                                    <span class="fontBlue">align-content:space-between;</span> &rArr; <span class="fontGreen"> The space-between value displays the flex lines with equal space between them.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-content:space-between;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgPink h-50 w-auto" style="display: flex; flex-wrap: wrap; align-content:space-between;">
+                                                <div class="flex-item bgLightRed w-50 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgLightBlue w-50 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgLightGreen w-50 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- align-content:space-around -->
+                                <li>
+                                    <span class="fontBlue">align-content:space-around;</span> &rArr; <span class="fontGreen"> The space-around value displays the flex lines with space before, between, and after them.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-content:space-around;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgPink h-50 w-auto" style="display: flex; flex-wrap: wrap; align-content:space-around;">
+                                                <div class="flex-item bgLightRed w-50 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgLightBlue w-50 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgLightGreen w-50 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- align-content:space-evenly -->
+                                <li>
+                                    <span class="fontBlue">align-content:space-evenly;</span> &rArr; <span class="fontGreen"> The space-evenly value displays the flex lines with equal space around them.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; <span class="fontRed">align-content:space-evenly;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgPink h-50 w-auto" style="display: flex; flex-wrap: wrap; align-content:space-evenly;">
+                                                <div class="flex-item bgLightRed w-50 p-3 m-3">Item 1</div>
+                                                <div class="flex-item bgLightBlue w-50 p-3 m-3">Item 2</div>
+                                                <div class="flex-item bgLightGreen w-50 p-3 m-3">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="d-flex flex-column">
+            <div class="w -100 p-1 bgRed"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; Flex Items & It's Properties</div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; Child Elements (Items)</div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="container fs-2">
+                <div class="bold fontBlue m-5">&rArr; The direct child elements of a flex container automatically becomes flexible (flex) items.</div>
+                <div class="bold fontBlue m-5">&rArr; How To Make Div As Flex-Container & Items As Flex-Items:-</div>
+                <code class="fontLightBlue">
+                    &lt;div class="flex-container" <span class="fontRed">style="display:flex"</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 1 &lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 2 &lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item"&gt; Item 3 &lt;div&gt;<br>
+                    &lt;div&gt;
+                </code>
+                <div class="fontLightRed">&rArr; Like we specified in above Syntax The flex container becomes flexible by setting the display property to flex:</div>
+                <div class="bold fontBlue m-5">&rArr; Syntax Result :-</div>
+                <div class="flex-container bgLightBlue h-10 w-50" style="display: flex">
+                    <div class="flex-item bgWhite p-3 m-3">Item 1</div>
+                    <div class="flex-item bgWhite p-3 m-3">Item 2</div>
+                    <div class="flex-item bgWhite p-3 m-3">Item 3</div>
+                </div>
+                <div class="bold fontBlue m-5">&rArr; Here Blue Background Represent Flex-Container & White Boxes Represent Flex-Items</div>
+            </div>
+        </div>
+        <!-- Flex Items Property -->
+        <div class="d-flex flex-column fs-3">
+            <div class="fontLightRed">
+                <ul>
+                    <li>There are six different properties you can set for flex-items:
+                        <ol class="fontGreen">
+                            <li>order</li>
+                            <li>flex-grow</li>
+                            <li>flex-shrink</li>
+                            <li>flex-basis</li>
+                            <li>flex</li>
+                            <li>align-self</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div class="container fontRed d-flex flex-column">
+                <!-- The Order Property -->
+                <div class="fs-3 ms-10">1 . The order Property
+                    <ul>
+                        <li class="fs-2 fontBlue">The order property specifies the order of the flex items.</li>
+                        <li class="fs-2 fontBlue">The first flex item in the code does not have to appear as the first item in the layout.</li>
+                        <li class="fs-2 fontBlue">The order value must be a number, <span class="bgYellow fontBlack fs-2">&rarr; The default value is 0.</span>
+                            <ul class="fs-2">
+                                <!-- Order Property -->
+                                <li> 
+                                    <span class="fontBlue">order:1;</span> &rArr; <span class="fontGreen"> The smaller order value element will be place first in the stacks .</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex;"&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="order:2"</span>&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="order:3"</span>&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="order:1"</span>&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex;">
+                                                <div class="flex-item bgWhite p-3 m-3" style="order:2">Item 1</div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="order:3">Item 2</div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="order:1">Item 3</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- The Flex-grow Property -->
+                <div class="fs-3 ms-10">2 . The flex-grow Property
+                    <ul>
+                        <li class="fs-2 fontBlue">The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.</li>
+                        <li class="fs-2 fontBlue">The flex-grow value must be a number, <span class="bgYellow fontBlack fs-2">&rarr; The default value is 0.</span>
+                            <ul class="fs-2">
+                                <!-- Flex-grow Property -->
+                                <li> 
+                                    <span class="fontBlue">flex-grow:4;</span> &rArr; <span class="fontGreen"> It Means Make the flex item grow four times faster than the other flex items.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex;"&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-grow:1"</span>&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-grow:4"</span>&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-grow:1"</span>&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex;">
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-grow:1">Item 1 - grow 1</div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-grow:4">Item 2 - grow 4 times faster</div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-grow:1">Item 3 - grow 1</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- The Flex-Shrink Property -->
+                <div class="fs-3 ms-10">3 . The flex-shrink Property
+                    <ul>
+                        <li class="fs-2 fontBlue">The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items.</li>
+                        <li class="fs-2 fontBlue">The flex-shrink value must be a number, <span class="bgYellow fontBlack fs-2">&rarr; The default value is 1.</span>
+                            <ul class="fs-2">
+                                <!-- Flex-shrink Property -->
+                                <li> 
+                                    <span class="fontBlue">flex-shrink:4;</span> &rArr; <span class="fontGreen"> It Means Make the flex item shrink four times faster than the other flex items.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex;"&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-shrink:1"</span>&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-shrink:4"</span>&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-shrink:1"</span>&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex;">
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-shrink:1">Item 1 - shrink 1</div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-shrink:4">Item 2 - shrink 4 times faster</div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-shrink:1">Item 3 - shrink 1</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- The Flex-Basis Property -->
+                <div class="fs-3 ms-10">4 . The flex-basis Property
+                    <ul>
+                        <li class="fs-2 fontBlue">The flex-basis property specifies the initial length of a flex item.</li>
+                        <li class="fs-2 fontBlue"> &rArr; When  <span class="bgYellow fontBlack fs-2">flex-direction:</span> is set to  <span class="bgYellow fontBlack fs-2">row</span> than <span class="bgPink fontBlack fs-2">flex-basis:</span> will control element <span class="bgPink fontBlack fs-2">width.</span>
+                        <li class="fs-2 fontBlue"> &rArr; When  <span class="bgYellow fontBlack fs-2">flex-direction:</span> is set to  <span class="bgYellow fontBlack fs-2">column</span> than <span class="bgPink fontBlack fs-2">flex-basis:</span> will control element <span class="bgPink fontBlack fs-2">height.</span>
+                            <ul class="fs-2">
+                                <!-- flex-basis with flex-direction:row Property -->
+                                <li> 
+                                    <span class="fontBlue">flex-basis Property With flex-direction:row;</span> &rArr; <span class="fontGreen"> It Means The flex-basis property will control the width of a flex item.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; flex-direction:row;"&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-basis:20vw"</span>&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-basis:40vw"</span>&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-basis:20vw"</span>&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex;">
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-basis:20vw">Item 1 - 20 view width </div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-basis:40vw">Item 2 - 40 view width</div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-basis:20vw">Item 3 - 20 view width</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- flex-basis with flex-direction:column Property -->
+                                <li> 
+                                    <span class="fontBlue">flex-basis Property With flex-direction:column;</span> &rArr; <span class="fontGreen"> It Means The flex-basis property will control the height of a flex item.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex; flex-direction:column;"&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-basis:5vh"</span>&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-basis:10vh"</span>&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex-basis:5vh"</span>&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex; flex-direction: column;">
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-basis:5vw">Item 1 - 5 view height</div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-basis:10vw">Item 2 - 10 view height</div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex-basis:5vw">Item 3 - 5 view height</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- The Flex Shorthand Property -->
+                <div class="fs-3 ms-10">5 . The flex Property
+                    <ul>
+                        <li class="fs-2 fontBlue">The flex property is a shorthand property for setting the flex-grow, flex-shrink, and flex-basis properties.</li>
+                            <ul class="fs-2">
+                                <!-- Flex-shrink Property -->
+                                <li> 
+                                    <span class="fontBlue">flex: 2 3 400px;</span> &rArr; <span class="fontGreen"> It Means set the flex-grow to 2, flex-shrink to 3, and flex-basis to 400px.</span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="flex-container" style="display:flex;"&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex:1 2 20vw"</span>&gt; Item 1 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex:2 4 40vw"</span>&gt; Item 2 &lt;div&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="flex:1 2 20vw"</span>&gt; Item 3 &lt;div&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="flex-container bgLightBlue h-auto w-auto" style="display: flex;">
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex:1 2 20vw">Item 1 - grow 1 shrink 2 times faster width 20vw</div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex:2 4 40vw">Item 2 - grow 2 shrink 4 times faster width 40vw</div>
+                                                <div class="flex-item bgWhite p-3 m-3" style="flex:1 2 20vw">Item 3 - grow 1 shrink 2 times faster width 20vw</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- The Align-self Property -->
+                <div class="fs-3 ms-10">6 . The align-self Property
+                    <ul>
+                        <li class="fs-2 fontBlue">The align-self property specifies the alignment for the selected item inside the flexible container.</li>
+                        <li class="fs-2 fontBlue">The align-self property overrides the default alignment set by the container's align-items property.</li>
+                        <li>There are 5 different values you can set for align-self:
+                            <ol class="fontGreen fs-2">
+                                <li>stretch <span class="fontRed">&rarr; </span> <span class="fontBlue">align-self: stretch;</span> &rArr; <span class="fontGreen"> The element is positioned to fit the container.</span><span class="bgYellow fontBlack fs-2">&rarr; This Is Default Value</span></li>
+                                <li>flex-start <span class="fontRed">&rarr; </span> <span class="fontBlue">align-self: flex-start;</span> &rArr; <span class="fontGreen"> The element is positioned at the beginning of the container.</span></li>
+                                <li>flex-end <span class="fontRed">&rarr; </span> <span class="fontBlue">align-self: flex-end;</span> &rArr; <span class="fontGreen"> The element is positioned at the end of the container.</span></li>
+                                <li>center <span class="fontRed">&rarr; </span> <span class="fontBlue">align-self: center;</span> &rArr; <span class="fontGreen"> The element is positioned at the center of the container.</span></li>
+                                <li>baseline <span class="fontRed">&rarr; </span> <span class="fontBlue">align-self: baseline;</span> &rArr; <span class="fontGreen"> The element is positioned at the baseline of the container.</span></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ul class="fs-2">
+                                <!-- align-self Property -->
+                                <li>
+                                    <span class="fontLightRed">Syntax :- </span> <br>
+                                    <code class="fontLightBlue">
+                                        &lt;div class="flex-container" style="display:flex;"&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="align-self: stretch;"</span>&gt; <span class="fontGreen fs-2">&nbsp;&nbsp;&nbsp;Item 1</span> &lt;div&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="align-self: flex-start;"</span>&gt; <span class="fontGreen fs-2">Item 2</span> &lt;div&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="align-self: flex-end;"</span>&gt; <span class="fontGreen fs-2">&nbsp;&nbsp;Item 3</span> &lt;div&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="align-self: center;"</span>&gt; <span class="fontGreen fs-2">&nbsp;&nbsp;&nbsp;&nbsp;Item 4</span> &lt;div&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="flex-item" <span class="fontRed">style="align-self: baseline;"</span>&gt; <span class="fontGreen fs-2">&nbsp;&nbsp;Item 5</span> &lt;div&gt;<br>
+                                        &lt;div&gt;
+                                    </code>
+                                </li>
+                                <li>
+                                    <span class="fontLightRed">Result :- </span> <br>
+                                    <div class="flex-container bgLightBlue h-30 w-auto" style="display: flex;">
+                                        <div class="flex-item bgWhite p-3 m-3" style="align-self: stretch;">Item 1 - align-self: stretch</div>
+                                        <div class="flex-item bgWhite p-3 m-3" style="align-self: flex-start;">Item 2 - align-self: flex-start</div>
+                                        <div class="flex-item bgWhite p-3 m-3" style="align-self: flex-end;">Item 3 - align-self: flex-end</div>
+                                        <div class="flex-item bgWhite p-3 m-3" style="align-self: center;">Item 4 - align-self: center</div>
+                                        <div class="flex-item bgWhite p-3 m-3" style="align-self: baseline;">Item 5 - align-self: baseline</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </body>
