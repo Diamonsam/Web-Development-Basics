@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styleResponsive.css">
+    <title>Learn Responsive Web Design - Media Queries</title>
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column">
+        <div class="w-100 p-1 bgBlack"></div>
+        <span class="fontRed fs-4">&rArr; What is a Media Query?</span>
+        <div class="w-100 p-1 bgBlack"></div>
+        <span class="fs-3 p-4">&rArr; Media query is a CSS technique introduced in CSS3.</span>
+        <span class="fs-3 px-10">&rArr; It uses the @media rule to include a block of CSS properties only if a certain condition is true.
+            <ul>
+                <li class="fs-2 p-2">For Example:- </li>
+                <li class="fs-2 p-2">If the browser window is 600px or smaller, the background color will be lightblue:</li>
+                <li class="fs-2 p-2">
+                    <code class="fontLightBlue">
+                        &lt;style&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; @media only screen and (max-width: 600px) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; body {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: lightblue;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &lt;/style&gt;<br>
+                    </code>
+                </li>
+            </ul>
+        </span>
+        <div class="w-100 p-1 bgBlack"></div>
+        <span class="fontRed fs-2">&rArr; Add a Breakpoint :- We can add a breakpoint where certain parts of the design will behave differently on each side of the breakpoint.</span>
+        <div class="w-100 p-1 bgBlack"></div>
+    </div>
+    <!-- Extra small devices (phones, 600px and down) -->
+    <div class="container-fluid">
+        <div class="d-flex flex-column">
+            <div class="w -100 p-1 bgRed"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; Extra small devices (phones, width = 600px and down)</div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="container fs-2">
+                <div class="bold fontBlue m-5">&rArr; Syntax For Defining Media rule for extra small devices :-</div>
+                <code class="lGolden">
+                    &lt;style&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; @media only screen and (max-width: 600px) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .mediaDiv {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: lightgoldenrodyellow;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &lt;/style&gt;<br>
+                </code>
+                <div class="bold fontBlue m-5">&rArr; Syntax Result :-</div>
+                <div class="mediaDiv">
+                    <div class="extraSmall">I Am Extra small device</div>
+                    <div class="small">I Am Small device</div>
+                    <div class="medium">I Am Medium Size device</div>
+                    <div class="large">I Am Large Size device</div>
+                    <div class="extraLarge">I Am Extra Large Size device</div>
+                    <div class="landscape">This Device Is In Landscape Orientation</div>
+                </div>
+                <div class="bold fontBlue m-5">&rArr; Notice How Different Media Rules Kick-In With Different Screen Size by Resizing Browser Window.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Small devices (portrait tablets and large phones, width between 600px and 768px) -->
+    <div class="container-fluid">
+        <div class="d-flex flex-column">
+            <div class="w -100 p-1 bgRed"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; Small devices (portrait tablets and large phones, width between 600px and 768px)  </div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="container fs-2">
+                <div class="bold fontBlue m-5">&rArr; Syntax For Defining Media rule for Small devices :-</div>
+                <code class="lCoral">
+                    &lt;style&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; @media only screen and (min-width: 600px)  and (max-width: 768px){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .mediaDiv {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: lightcoral;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &lt;/style&gt;<br>
+                </code>
+                <div class="bold fontBlue m-5">&rArr; Syntax Result :-</div>
+                <div class="mediaDiv">
+                    <div class="extraSmall">I Am Extra small device</div>
+                    <div class="small">I Am Small device</div>
+                    <div class="medium">I Am Medium Size device</div>
+                    <div class="large">I Am Large Size device</div>
+                    <div class="extraLarge">I Am Extra Large Size device</div>
+                    <div class="landscape">This Device Is In Landscape Orientation</div>
+                </div>
+                <div class="bold fontBlue m-5">&rArr; Notice How Different Media Rules Kick-In With Different Screen Size by Resizing Browser Window.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Medium devices (landscape tablets, width between 768px and 992px) -->
+    <div class="container-fluid">
+        <div class="d-flex flex-column">
+            <div class="w -100 p-1 bgRed"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; Medium devices (landscape tablets, width between 768px and 992px)</div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="container fs-2">
+                <div class="bold fontBlue m-5">&rArr; Syntax For Defining Media rule for Medium devices :-</div>
+                <code class="lSeaGreen">
+                    &lt;style&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; @media only screen and (min-width: 768px)  and (max-width: 992px){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .mediaDiv {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: lightseagreen;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &lt;/style&gt;<br>
+                </code>
+                <div class="bold fontBlue m-5">&rArr; Syntax Result :-</div>
+                <div class="mediaDiv">
+                    <div class="extraSmall">I Am Extra small device</div>
+                    <div class="small">I Am Small device</div>
+                    <div class="medium">I Am Medium Size device</div>
+                    <div class="large">I Am Large Size device</div>
+                    <div class="extraLarge">I Am Extra Large Size device</div>
+                    <div class="landscape">This Device Is In Landscape Orientation</div>
+                </div>
+                <div class="bold fontBlue m-5">&rArr; Notice How Different Media Rules Kick-In With Different Screen Size by Resizing Browser Window.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Large devices (laptops/desktops, width between 992px and 1200px)  -->
+    <div class="container-fluid">
+        <div class="d-flex flex-column">
+            <div class="w -100 p-1 bgRed"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; Large devices (laptops/desktops, width between 992px and 1200px)</div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="container fs-2">
+                <div class="bold fontBlue m-5">&rArr; Syntax For Defining Media rule for Large Size devices :-</div>
+                <code class="lSalmon">
+                    &lt;style&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; @media only screen and (min-width: 992px)  and (max-width: 1200px){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .mediaDiv {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: lightsalmon;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &lt;/style&gt;<br>
+                </code>
+                <div class="bold fontBlue m-5">&rArr; Syntax Result :-</div>
+                <div class="mediaDiv">
+                    <div class="extraSmall">I Am Extra small device</div>
+                    <div class="small">I Am Small device</div>
+                    <div class="medium">I Am Medium Size device</div>
+                    <div class="large">I Am Large Size device</div>
+                    <div class="extraLarge">I Am Extra Large Size device</div>
+                    <div class="landscape">This Device Is In Landscape Orientation</div>
+                </div>
+                <div class="bold fontBlue m-5">&rArr; Notice How Different Media Rules Kick-In With Different Screen Size by Resizing Browser Window.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Extra large devices (large laptops and desktops, 1200px and up)  -->
+    <div class="container-fluid">
+        <div class="d-flex flex-column">
+            <div class="w -100 p-1 bgRed"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; Extra Large devices (laptops/desktops, width = 1200px and up)</div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="container fs-2">
+                <div class="bold fontBlue m-5">&rArr; Syntax For Defining Media rule for Extra Large Size devices :-</div>
+                <code class="lCrimson">
+                    &lt;style&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; @media only screen and (min-width: 1200px){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .mediaDiv {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: crimson;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &lt;/style&gt;<br>
+                </code>
+                <div class="bold fontBlue m-5">&rArr; Syntax Result :-</div>
+                <div class="mediaDiv">
+                    <div class="extraSmall">I Am Extra small device</div>
+                    <div class="small">I Am Small device</div>
+                    <div class="medium">I Am Medium Size device</div>
+                    <div class="large">I Am Large Size device</div>
+                    <div class="extraLarge">I Am Extra Large Size device</div>
+                    <div class="landscape">This Device Is In Landscape Orientation</div>
+                </div>
+                <div class="bold fontBlue m-5">&rArr; Notice How Different Media Rules Kick-In With Different Screen Size by Resizing Browser Window.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Orientation: Portrait / Landscape  -->
+    <div class="container-fluid">
+        <div class="d-flex flex-column">
+            <div class="w -100 p-1 bgRed"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; Orientation: Portrait / Landscape </div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="container fs-2">
+                <div class="bold fontBlue m-5">&rArr; Media queries can also be used to change layout of a page depending on the orientation of the browser:- </div>
+                <div class="bold fontBlue m-5">&rArr;You can have a set of CSS properties that will only apply when the browser window is wider than its height, a so called "Landscape" orientation:- </div>
+                <div class="bold fontBlue m-5">&rArr; Syntax For Defining Media rule for Orientations :-</div>
+                <code class="lCrimson">
+                    &lt;style&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; @media only screen and (orientation: landscape){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .mediaDiv {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: red;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &lt;/style&gt;<br>
+                </code>
+                <div class="bold fontBlue m-5">&rArr; Syntax Result :-</div>
+                <div class="mediaDiv">
+                    <div class="extraSmall">I Am Extra small device</div>
+                    <div class="small">I Am Small device</div>
+                    <div class="medium">I Am Medium Size device</div>
+                    <div class="large">I Am Large Size device</div>
+                    <div class="extraLarge">I Am Extra Large Size device</div>
+                    <div class="landscape">This Device Is In Landscape Orientation</div>
+                </div>
+                <div class="bold fontBlue m-5">&rArr; Notice How Different Media Rules Kick-In With Different Screen Size by Resizing Browser Window.</div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"><a href="#bottom"><button class="bgLightGreen fontBlue buttonBottom">END</button></a></div>
+</body>
+</html>

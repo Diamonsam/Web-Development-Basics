@@ -437,3 +437,108 @@ html{
 .column-gap-8{column-gap: 8rem;}
 .column-gap-9{column-gap: 9rem;}
 .column-gap-10{column-gap: 10rem;}
+
+.buttonBottom{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5rem;
+}
+
+/* Learn Media Queries  */
+.mediaDiv{
+    width: 50vw;
+    height: 20vh;
+    border: 1px solid red;
+}
+.extraSmall,.small,.medium, .large, .extraLarge ,.landscape{
+    display: none;
+    border: 1px solid green;
+    background-color: aquamarine;
+    text-align: center;
+    margin-top: 40px;
+}
+@media only screen and (max-width: 600px) {
+    .mediaDiv {
+       background-color: lightgoldenrodyellow;
+    }
+    .extraSmall{
+        display: block;
+    }
+}
+.lGolden{
+    color: lightgoldenrodyellow;
+    font-size: 13rem;
+    background-color: aquamarine;
+}
+
+@media only screen and (min-width:600px) and (max-width: 768px) {
+    .mediaDiv {
+       background-color:lightcoral;
+    }
+    .small{
+        display: block;
+    }
+}
+.lCoral{
+    color: lightcoral;
+    font-size: 13rem;
+    background-color: aquamarine;
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    .mediaDiv {
+       background-color:lightseagreen;
+    }
+    .medium{
+        display: block;
+    }
+}
+.lSeaGreen{
+    color: lightseagreen;
+    font-size: 13rem;
+    background-color: aquamarine;
+}
+
+@media only screen and (min-width:992px) and (max-width: 1200px) {
+    .mediaDiv {
+       background-color:lightsalmon;
+    }
+    .large{
+        display: block;
+    }
+}
+.lSalmon{
+    color: lightsalmon;
+    font-size: 13rem;
+    background-color: aquamarine;
+}
+
+@media only screen and (min-width:1200px) {
+    .mediaDiv {
+       background-color:crimson;
+    }
+    .extraLarge{
+        display: block;
+    }
+}
+.lCrimson{
+    color: crimson;
+    font-size: 13rem;
+    background-color: aquamarine;
+}
+@media only screen and (orientation: landscape) {
+    .mediaDiv {
+       background-color:red;
+    }
+    .landscape{
+        display: block;
+    }
+}
+.lRed{
+    color: red;
+    font-size: 13rem;
+    background-color: aquamarine;
+}

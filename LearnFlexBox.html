@@ -1092,6 +1092,309 @@
                 </div>
             </div>
         </div>
+        <div id="bottom"></div>
     </div>
+    <!-- CSS Units :- em, rem, vh and vw units  -->
+    <div class="container-fluid">
+        <div class="d-flex flex-column">
+            <div class="w -100 p-1 bgRed"></div>
+            <div class="fs-3 p-2 fontGreen">&rArr; CSS Units:- </div>
+            <div class="w -100 p-1 bgRed mb-10"></div>
+            <div class="container fs-2">
+                <div class="bold fontBlue m-5">&rArr; CSS has several different units for expressing a length.</div>
+                <div class="bold fontBlue m-5">&rArr; Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.</div>
+                <div class="bold fontBlue m-5">&rArr; Length is a number followed by a length unit, such as <span class="fontRed">10px, 2em, 1rem, 1vw </span>etc.</div>
+            </div>
+        </div>
+        <div class="d-flex flex-column fs-3">
+            <div class="fontLightRed">
+                <ul>
+                    <li>There are two types of length units.
+                        <ol class="fontGreen">
+                            <li>Absolute Lengths</li>
+                            <li>Relative Lengths</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div class="container fontRed d-flex flex-column">
+                <!-- Absolute Lengths -->
+                <div class="fs-3 ms-10">1 . Absolute Lengths :- 
+                    <ul>
+                        <li class="fs-2 fontBlue">The absolute length units are <span class="fontRed fs-3">fixed</span> and a length expressed in any of these will appear as exactly that size.</li>
+                        <li class="fs-2 fontBlue">Absolute length units are <span class="fontRed fs-3">not recommended</span> for use <span class="fontRed fs-3">on screen</span>, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout.</li>
+                        <li class="fs-2 fontBlue">These Are 6 Units For Absolute Lengths.
+                            <ol class="fs-2">
+                                <!-- Centimeters -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed">centimeters</span> &rArr; <span class="fontGreen"> Unit :- cm</span></span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:1cm;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Centimeters & It's Fixed Size Even If Screen Size Change.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 1cm;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Centimeters & It's Fixed Size Even If Screen Size Change.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Millimeters -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed">millimeters</span> &rArr; <span class="fontGreen"> Unit :- mm</span></span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:3mm;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Millimeters & It's Fixed Size Even If Screen Size Change.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 3mm;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Centimeters & It's Fixed Size Even If Screen Size Change.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Inches -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed">inches(1 inch = 96px = 2.54cm)</span> &rArr; <span class="fontGreen"> Unit :- in</span></span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:1in;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Inches & It's Fixed Size Even If Screen Size Change.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 1in;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Centimeters & It's Fixed Size Even If Screen Size Change.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Pixel -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed">pixels(1 pixel = 1/96th of 1 inch)</span> &rArr; <span class="fontGreen"> Unit :- px</span></span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:24px;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Pixel. Pixels (px) are relative to the viewing device.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For low-dpi devices, 1px is one device pixel (dot) of the display.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For printers and high resolution screens 1px implies multiple device pixels.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 24px;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Pixel. Pixels (px) are relative to the viewing device.<br> For low-dpi devices, 1px is one device pixel (dot) of the display.<br> For printers and high resolution screens 1px implies multiple device pixels.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Points -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed">points (1 point = 1/72 of 1 inch)</span> &rArr; <span class="fontGreen"> Unit :- pt</span></span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:24pt;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Points & It's Fixed Size Even If Screen Size Change.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 24pt;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Points & It's Fixed Size Even If Screen Size Change.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Picas -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed">picas (1 pica = 12 points) </span> &rArr; <span class="fontGreen"> Unit :- pc</span></span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:2pc;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Picas & It's Fixed Size Even If Screen Size Change.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 2pc;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Picas & It's Fixed Size Even If Screen Size Change.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Relative Lengths -->
+                <div class="fs-3 ms-10">2 . Relative Lengths :- 
+                    <ul>
+                        <li class="fs-2 fontBlue">The Relative length units are <span class="fontRed fs-3">responsive</span> and a length expressed in any of these will specify a length relative to another length property.</li>
+                        <li class="fs-2 fontBlue">Relative length units scale better between different rendering medium / different devices screens.</li>
+                        <li class="fs-2 fontBlue">These Are 9 Units For Relative Lengths.
+                            <ol class="fs-2">
+                                <!-- em Units -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed"> <span class="fontBlack fs-3">em</span> &rArr; Relative to the font-size of the <span class="fontBlack fs-3">e</span>le<span class="fontBlack fs-3">m</span>ent</span> &rArr; <span class="fontGreen"> Unit :- em</span></span>
+                                    <ul>
+                                        <li><span class="fontLightRed">How It Works :- <br> <span class="fontGreen">If Parent Element font-size is 10px and in child element you have specified font-size as 2em than child element font size will be 20px. It means it will take 2 times of the parent font size if you have specified 2em as font size.</span></span><li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:1cm;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Centimeters & It's Fixed Size Even If Screen Size Change.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 1cm;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Centimeters & It's Fixed Size Even If Screen Size Change.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Millimeters -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed">millimeters</span> &rArr; <span class="fontGreen"> Unit :- mm</span></span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:3mm;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Millimeters & It's Fixed Size Even If Screen Size Change.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 3mm;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Centimeters & It's Fixed Size Even If Screen Size Change.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Inches -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed">inches(1 inch = 96px = 2.54cm)</span> &rArr; <span class="fontGreen"> Unit :- in</span></span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:1in;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Inches & It's Fixed Size Even If Screen Size Change.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 1in;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Centimeters & It's Fixed Size Even If Screen Size Change.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Pixel -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed">pixels(1 pixel = 1/96th of 1 inch)</span> &rArr; <span class="fontGreen"> Unit :- px</span></span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:24px;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Pixel. Pixels (px) are relative to the viewing device.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For low-dpi devices, 1px is one device pixel (dot) of the display.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For printers and high resolution screens 1px implies multiple device pixels.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 24px;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Pixel. Pixels (px) are relative to the viewing device.<br> For low-dpi devices, 1px is one device pixel (dot) of the display.<br> For printers and high resolution screens 1px implies multiple device pixels.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Points -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed">points (1 point = 1/72 of 1 inch)</span> &rArr; <span class="fontGreen"> Unit :- pt</span></span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:24pt;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Points & It's Fixed Size Even If Screen Size Change.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 24pt;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Points & It's Fixed Size Even If Screen Size Change.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Picas -->
+                                <li> <span class="fontBlue border px-10">Description :- <span class="fontRed">picas (1 pica = 12 points) </span> &rArr; <span class="fontGreen"> Unit :- pc</span></span>
+                                    <ul>
+                                        <li>
+                                            <span class="fontLightRed">Syntax :- </span> <br>
+                                            <code class="fontLightBlue">
+                                                &lt;div class="container" <span class="fontRed">style="font-size:2pc;"</span>&gt;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="fontGreen"&gt; <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi My Font-Size Is In Picas & It's Fixed Size Even If Screen Size Change.<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;<br>
+                                                &lt;div&gt;
+                                            </code>
+                                        </li>
+                                        <li>
+                                            <span class="fontLightRed">Result :- </span> <br>
+                                            <div class="d-flex" style="font-size: 2pc;">
+                                            <p class="fontGreen">Hi My Font-Size Is In Picas & It's Fixed Size Even If Screen Size Change.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"><a href="#bottom"><button class="bgLightGreen fontBlue buttonBottom">END</button></a></div>
 </body>
 </html>
