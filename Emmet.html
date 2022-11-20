@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>LEARN EMMET SHORTCUTS WITH SAMY</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            border: 5px solid brown;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: deeppink
+        }
 
-<Boiler>
+        table, tr, th, td {
+            border: 2px solid firebrick;
+            border-collapse: collapse;
+            padding: 10px;
+            margin: 20px;
+            color: tomato;
+            background-color: lightyellow;
+
+        }
+
+        strong{
+            color: chocolate;
+        }
+    
+        code div{
+            color: cornflowerblue;
+            margin-left:10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
     <!-- For Boiler Plat HTML Use this Symbol & Press Enter= '!' -->
     <h1>VS CODE USEFUL SHORTCUTS</h1>
     &rarr;&nbsp;&nbsp;<strong>To Generate HTML Boiler Plate Code Press ! & Press Enter : This sortcut will give you below html boiler plate.(Pre Written Code)</strong>
-    <div class="code">
-        <p class="code">
+    <div>
+        <p>
             <table>
                 <tr>
                     <td>Mac Shortcut</td>
@@ -25,10 +54,10 @@
                     <td> ! + Enter</td>
                 </tr>
             </table>
-            <br> &rarr;&nbsp;&nbsp;This shortcut will generate below code .
+            <br> &rarr;&nbsp;&nbsp;<strong>This shortcut will generate below code .</strong>
         </p>
 
-        <code>
+        <code><div>
             &lt;!DOCTYPE html&gt;<br> &lt;html lang="en"&gt;<br> &lt;head&gt;
             <br> &lt;meta charset="UTF-8"&gt;<br> &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br> &lt;title&gt;Document&lt;/title&gt;
             <br> &lt;/head&gt;
@@ -36,60 +65,67 @@
             <br> &lt;/body&gt;
             <br> &lt;/html&gt;
             <br>
-        </code>
+        </div></code>
         <br><br>
     </div>
     <!-- Class creation Shortcut -->
     &rarr;&nbsp;&nbsp;<strong>To generate Tag with Class</strong>
-    <p class="code">
-        <code>
+    <code>
+        <div>
             Format :- tagname.classname + Enter (or) Tab key<br>
             For example div.container will create &lt;div class="container"&gt;&lt;div&gt;<br>
             One classname you can use in multiple elements.
-        </code><br><br>&rarr;&nbsp;&nbsp;You can crete single element with multiple classes.<br><br>
-        <code>
+        </div>
+    </code>
+    <br><br>&rarr;&nbsp;&nbsp;<strong> You can crete single element with multiple classes.</strong><br><br>
+    <code>
+        <div>
             Format :- tagname.classname1.classsname2.classname3 + Enter (or) Tab key<br>
             For example div.container.redBg.greenText will create &lt;div class="container redBg greenText"&gt;&lt;div&gt;
-        </code>
-        <br><br>&rarr;&nbsp;&nbsp;Default Element is Div when no element is specified.<br><br>
-        <code>
+        </div>
+    </code>
+    <br><br>&rarr;&nbsp;&nbsp;<strong> Default Element is Div when no element is specified.</strong><br><br>
+    <code>
+        <div>
             Format :- .classname + Enter (or) Tab key<br>
             For example .container will create &lt;div class="container"&gt;&lt;div&gt;<br>
-        </code><br><br>
-    </p>
+        </div>
+    </code><br><br>
     <!-- Id creation Shortcut -->
     &rarr;&nbsp;&nbsp;<strong>To generate Tag with Id</strong>
-    <p class="code">
-        <code>
+    <code>
+        <div>
             Format :- tagname#idname + Enter (or) Tab key<br>
             For example div#container will create &lt;div id="container"&gt;&lt;div&gt;<br>
             One idname is unique &  you can't use it in multiple elements, you can only use it in one element.
-        </code>
-        <br><br>You can not crete single element with multiple Ids.
-        <br><br>&rarr;&nbsp;&nbsp;Default Element is Div when no element is specified.<br><br>
-        <code>
+        </div>
+    </code>
+    <br><br><p style="color: red; font-size: 2rem; border: 5px solid brown;">&rarr;&nbsp;&nbsp;You can not crete single element with multiple Ids.</p>
+    <br><br>&rarr;&nbsp;&nbsp;<strong> Default Element is Div when no element is specified.</strong><br><br>
+    <code>
+        <div>
             Format :- #classname + Enter (or) Tab key<br>
             For example #container will create &lt;div id="container"&gt;&lt;div&gt;<br>
-        </code><br><br>
-    </p>
+        </div>
+    </code><br><br>
     <!-- Create Multiple tag -->
     &rarr;&nbsp;&nbsp;<strong>To generate Multiple Tags</strong>
-    <p class="code">
         <code>
-            Format :- tagname*number + Enter (or) Tab key<br>
-            For example div*5 will create Five divs
-            <br>&lt;div&gt;&lt;div&gt;<br>
-            &lt;div&gt;&lt;div&gt;<br>
-            &lt;div&gt;&lt;div&gt;<br>
-            &lt;div&gt;&lt;div&gt;<br>
-            &lt;div&gt;&lt;div&gt;<br>
+            <div>
+                Format :- tagname*number + Enter (or) Tab key<br>
+                For example div*5 will create Five divs
+                <br>&lt;div&gt;&lt;div&gt;<br>
+                &lt;div&gt;&lt;div&gt;<br>
+                &lt;div&gt;&lt;div&gt;<br>
+                &lt;div&gt;&lt;div&gt;<br>
+                &lt;div&gt;&lt;div&gt;<br>
+            </div>
         </code>
-    </p>
     <br><br>
     <!-- Create Multiple tag With Class-->
     &rarr;&nbsp;&nbsp;<strong>To generate Multiple Tags with Class Same Name</strong>
-    <p class="code">
-        <code>
+    <code>
+        <div>
             Format :- tagname.classname*number + Enter (or) Tab key<br>
             For example div.container*5 will create Five divs with class container
             <br>
@@ -98,13 +134,12 @@
             &lt;div class="conatiner"&gt;&lt;div&gt;<br>
             &lt;div class="conatiner"&gt;&lt;div&gt;<br>
             &lt;div class="conatiner"&gt;&lt;div&gt;<br>
-        </code>
-    </p>
-    <br><br>
+        </div>
+    </code><br><br>
     <!-- Create Multiple tag -->
     &rarr;&nbsp;&nbsp;<strong>To generate Multiple Tags With Different id</strong>
-    <p class="code">
-        <code>
+    <code>
+        <div>
             Format :- tagname#idname$*number + Enter (or) Tab key<br>
             For example div#div$*5 will create Five divs with id's like div1,div2,div3,div4,div5<br>
             Here $ sign is for strating index from 1 to to the number you have provided.<br>
@@ -114,13 +149,12 @@
             &lt;div id="div3"&gt;&lt;div&gt;<br>
             &lt;div id="div4"&gt;&lt;div&gt;<br>
             &lt;div id="div5"&gt;&lt;div&gt;<br>
-        </code>
-    </p>
-    <br><br>
+        </div>
+    </code><br><br>
     <!-- Create Multiple tag With Multiple details Inside It. -->
     &rarr;&nbsp;&nbsp;<strong>To generate Multiple Tags With Different id & Different Content</strong>
-    <p class="code">
-        <code>
+    <code>
+        <div>
             Format :- tagname#idname${this is div$}*number + Enter (or) Tab key<br>
             For example div#div${This is div$}*5 will create Five divs with id's like div1,div2,div3,div4,div5 & five different content<br>
             Here $ sign is for strating index from 1 to to the number you have provided.<br>
@@ -130,96 +164,85 @@
             &lt;div id="div3"&gt;This is div3&lt;div&gt;<br>
             &lt;div id="div4"&gt;This is div4&lt;div&gt;<br>
             &lt;div id="div5"&gt;This is div5&lt;div&gt;<br>
-        </code>
-
-        
-    </p>
-    <br><br>
+        </div>
+    </code><br><br>
     <!-- command + return for new line from inside tag -->
     &rarr;&nbsp;&nbsp;<strong>To Go To New Line From Inside Tag</strong>
-    <p class="code">
-        <table>
-            <tr>
-                <td>Mac Shortcut</td>
-                <td> &#8984; + &#9166;</td>
-            </tr>
-            <tr>
-                <td>Window Shortcut</td>
-                <td> Ctrl + Enter</td>
-            </tr>
-        </table>
-    </p>
+    <table>
+        <tr>
+            <td>Mac Shortcut</td>
+            <td> &#8984; + &#9166;</td>
+        </tr>
+        <tr>
+            <td>Window Shortcut</td>
+            <td> Ctrl + Enter</td>
+        </tr>
+    </table>
     <!-- option + up/down for move line to up or down in code -->
     &rarr;&nbsp;&nbsp;<strong>To Move Selected Line of code Up or down in code</strong>
-    <p class="code">
-        <table>
-            <tr>
-                <td>Mac Shortcut</td>
-                <td>&#8997; + &darr;</td>
-                <td>&larr;OR&rarr;</td>
-                <td>&#8997; + &uarr;</td>
-            </tr>
-            <tr>
-                <td>Window Shortcut</td>
-                <td>Alt + Down-Arrow</td>
-                <td>&larr;OR&rarr;</td>
-                <td>Alt + Up-Arrow</td>
-            </tr>
-        </table>
-    </p>
+    <table>
+        <tr>
+            <td>Mac Shortcut</td>
+            <td>&#8997; + &darr;</td>
+            <td>&larr;OR&rarr;</td>
+            <td>&#8997; + &uarr;</td>
+        </tr>
+        <tr>
+            <td>Window Shortcut</td>
+            <td>Alt + Down-Arrow</td>
+            <td>&larr;OR&rarr;</td>
+            <td>Alt + Up-Arrow</td>
+        </tr>
+    </table>
     <!-- command + / for commenting -->
     &rarr;&nbsp;&nbsp;<strong>To Comment any line or selected text</strong>
-    <p class="code">
-        <table>
-            <tr>
-                <td>Mac Shortcut</td>
-                <td> &#8984; + /</td>
-            </tr>
-            <tr>
-                <td>Window Shortcut</td>
-                <td> Ctrl + /</td>
-            </tr>
-            <tr>
-                <td>HTML Syntax</td>
-                <td> &lt;!-- comment part --&gt;</td>
-            </tr>
-            <tr>
-                <td>CSS Syntax</td>
-                <td> /* comment part */</td>
-            </tr>
-        </table>
-    </p>
+
+    <table>
+        <tr>
+            <td>Mac Shortcut</td>
+            <td> &#8984; + /</td>
+        </tr>
+        <tr>
+            <td>Window Shortcut</td>
+            <td> Ctrl + /</td>
+        </tr>
+        <tr>
+            <td>HTML Syntax</td>
+            <td> &lt;!-- comment part --&gt;</td>
+        </tr>
+        <tr>
+            <td>CSS Syntax</td>
+            <td> /* comment part */</td>
+        </tr>
+    </table>
     <!-- Type in Multiple Line -->
     &rarr;&nbsp;&nbsp;<strong>To Type In Multiple Lines</strong>
-    <p class="code">
-        <table>
-            <tr>
-                <td>Mac Shortcut</td>
-                <td>&#8984; + &#8997; + &darr;</td>
-                <td>&larr;OR&rarr;</td>
-                <td>&#8984; + &#8997; + &uarr;</td>
-            </tr>
-            <tr>
-                <td>Window Shortcut</td>
-                <td>Ctrl + Alt + Down-Arrow</td>
-                <td>&larr;OR&rarr;</td>
-                <td>Ctrl + Alt + Up-Arrow</td>
-            </tr>
-        </table>
-    </p>
+    <table>
+        <tr>
+            <td>Mac Shortcut</td>
+            <td>&#8984; + &#8997; + &darr;</td>
+            <td>&larr;OR&rarr;</td>
+            <td>&#8984; + &#8997; + &uarr;</td>
+        </tr>
+        <tr>
+            <td>Window Shortcut</td>
+            <td>Ctrl + Alt + Down-Arrow</td>
+            <td>&larr;OR&rarr;</td>
+            <td>Ctrl + Alt + Up-Arrow</td>
+        </tr>
+    </table>
     <!-- lorem40 for 40 random dummy words -->
     &rarr;&nbsp;&nbsp;<strong>To Generate Dummy Text With (N) Number words</strong>
     <br><br>
-    <div class="code">
-        <code>
+    <code>
+        <div>
             Write &rarr; lorem10 & Press Enter to Generate 10 Words Dummy Text.<br>
             For Example lorem10 = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eos!
             <br>
             <br>
             Write &rarr; lorem20 Press Enter to Generate 20 Words Dummy Text.<br>
             For Example lorem20 = Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at accusamus voluptatibus, magnam excepturi est ut dolores nesciunt vero ipsam.
-        </code>
-    </div>
-    </body>
-
+        </div>
+    </code>
+</body>
 </html>
